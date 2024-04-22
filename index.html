@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="./Cesium-1.98/Build/Cesium/Cesium.js"></script>
+    <link rel="stylesheet" href="./Cesium-1.98/Build/Cesium/Widgets/widgets.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #cesiumContainer {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cesiumContainer"></div>
+
+    </div>
+
+</body>
+<script>
+
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+        creditContainer:document.createElement("div")
+    });
+
+    // 清除默认底图
+    viewer.imageryLayers.remove(viewer.imageryLayers.get(0));
+
+    // 清除默认地形
+    viewer.scene.terrainProvider = new Cesium.EllipsoidTerrainProvider({});
+
+    // 开启帧率
+    viewer.scene.debugShowFramesPerSecond=true; 
+    document.getElementsByClassName("cesium-animation-rectButton")[0].setAttribute('transform','translate(3,4) scale(1.25) ');  
+    var imageryProvider = new Cesium.SingleTileImageryProvider({
+        "url": "./word.jpg",
+        id: '1'
+    })
+    viewer.imageryLayers.addImageryProvider(imageryProvider)
+    // https://sketchfab.com/feed
+</script>
+
+</html>
