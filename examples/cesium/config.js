@@ -35,32 +35,33 @@ var exampleConfig = {
                 content: [{
                     name: "单张图片",
                     name_en: "单张图片",
-                    thumbnail: "test.png",
-                    fileName: "test"
+                    thumbnail: "2.1.1、img.png",
+                    fileName: "2.1.1、img"
                 },
                 {
-                    name: "xyz",
-                    name_en: "xyz",
-                    thumbnail: "test2.png",
-                    fileName: "test2"
-                }]
-            },
-            "map2": {
-                name: "矢量",
-                name_en: "shp",
-                content: [{
-                    name: "test",
-                    name_en: "test",
-                    thumbnail: "test.png",
-                    fileName: "test"
+                    name: "xyz服务",
+                    name_en: "xyz服务",
+                    thumbnail: "2.1.2、xyz.png",
+                    fileName: "2.1.2、xyz"
                 },
-                {
-                    name: "test2",
-                    name_en: "test2",
-                    thumbnail: "test2.png",
-                    fileName: "test2"
-                }]
+               ]
             },
+            // "map2": {
+            //     name: "矢量",
+            //     name_en: "shp",
+            //     content: [{
+            //         name: "test",
+            //         name_en: "test",
+            //         thumbnail: "test.png",
+            //         fileName: "test"
+            //     },
+            //     {
+            //         name: "test2",
+            //         name_en: "test2",
+            //         thumbnail: "test2.png",
+            //         fileName: "test2"
+            //     }]
+            // },
         }
     },
 };
