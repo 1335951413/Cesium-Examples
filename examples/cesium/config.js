@@ -11,16 +11,16 @@ var exampleConfig = {
                 name: "基础",
                 name_en: "base",
                 content: [{
-                    name: "test",
-                    name_en: "test",
+                    name: "基础用法",
+                    name_en: "基础用法",
                     thumbnail: "test.png",
-                    fileName: "test"
+                    fileName: "1.1、默认设置"
                 },
                 {
-                    name: "test2",
+                    name: "颜色",
                     name_en: "test2",
                     thumbnail: "test2.png",
-                    fileName: "test2"
+                    fileName: "1.2、颜色"
                 }]
             },
         }
@@ -44,7 +44,7 @@ var exampleConfig = {
                     thumbnail: "2.1.2、xyz.png",
                     fileName: "2.1.2、xyz"
                 },
-               ]
+                ]
             },
             // "map2": {
             //     name: "矢量",
