@@ -11,17 +11,50 @@ var exampleConfig = {
                 name: "基础",
                 name_en: "base",
                 content: [{
-                    name: "基础用法",
-                    name_en: "基础用法",
-                    thumbnail: "test.png",
+                    name: "1.1、默认设置",
+                    name_en: "1.1、默认设置",
+                    thumbnail: "1.1、默认设置.png",
                     fileName: "1.1、默认设置"
                 },
                 {
-                    name: "颜色",
-                    name_en: "test2",
-                    thumbnail: "test2.png",
+                    name: "1.2、颜色",
+                    name_en: "1.2、颜色",
+                    thumbnail: "1.2、颜色.png",
                     fileName: "1.2、颜色"
-                }]
+                },
+                {
+                    name: "1.3、坐标、坐标转换",
+                    name_en: "1.3、坐标、坐标转换",
+                    thumbnail: "1.3、坐标、坐标转换.png",
+                    fileName: "1.3、坐标、坐标转换"
+                },
+                {
+                    name: "1.4、屏幕、场景、地表坐标",
+                    name_en: "1.4、屏幕、场景、地表坐标",
+                    thumbnail: "1.4、屏幕、场景、地表坐标.png",
+                    fileName: "1.4、屏幕、场景、地表坐标"
+                },
+                {
+                    name: "1.15、罗盘、导航条",
+                    name_en: "1.15、罗盘、导航条",
+                    thumbnail: "1.15、罗盘、导航条.png",
+                    fileName: "1.15、罗盘、导航条"
+                },
+                // {
+                //     name: "相机",
+                //     name_en: "相机",
+                //     thumbnail: "1.5、相机.png",
+                //     fileName: "1.5、相机"
+                // },
+                // {
+                //     name: "事件",
+                //     name_en: "事件",
+                //     thumbnail: "1.6、事件",
+                //     fileName: "1.6、事件"
+                // }
+                
+                
+            ]
             },
         }
     },

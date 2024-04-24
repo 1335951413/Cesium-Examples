@@ -39,12 +39,15 @@
             targetFrameRate: undefined,//使用默认render loop时的帧率  
             showRenderLoopErrors: false,//如果设为true，将在一个HTML面板中显示错误信息  
             automaticallyTrackDataSourceClocks: true,//自动追踪最近添加的数据源的时钟设置  
+            
             contextOptions: {
                 // 支持html2cavas截图
                 webgl: {
                     preserveDrawingBuffer: true // 设置为 true 来启用
                 }
-            },//传递给Scene对象的上下文参数（scene.options）  
+            },
+
+            //传递给Scene对象的上下文参数（scene.options）  
             sceneMode: Cesium.SceneMode.SCENE3D,//初始场景模式  
             mapProjection: new Cesium.WebMercatorProjection(),//地图投影体系  
             dataSources: new Cesium.DataSourceCollection(),
