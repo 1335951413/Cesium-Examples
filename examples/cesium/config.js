@@ -41,6 +41,60 @@ var exampleConfig = {
                     fileName: "1.5、相机"
                 },
                 {
+                    name: "1.6、事件",
+                    name_en: "1.6、事件",
+                    thumbnail: "1.6、事件.png",
+                    fileName: "1.6、事件"
+                },
+                {
+                    name: "1.7、飞行漫游",
+                    name_en: "1.7、飞行漫游",
+                    thumbnail: "1.7、飞行漫游.png",
+                    fileName: "1.7、飞行漫游"
+                },
+                {
+                    name: "1.8、时间运动",
+                    name_en: "1.8、时间运动",
+                    thumbnail: "1.8、时间运动.png",
+                    fileName: "1.8、时间运动"
+                },
+                {
+                    name: "1.9、气泡窗口",
+                    name_en: "1.9、气泡窗口",
+                    thumbnail: "1.9、气泡窗口.png",
+                    fileName: "1.9、气泡窗口"
+                },
+                {
+                    name: "1.10、反选遮罩",
+                    name_en: "1.10、反选遮罩",
+                    thumbnail: "1.10、反选遮罩.png",
+                    fileName: "1.10、反选遮罩"
+                },
+                {
+                    name: "1.11、加载shp",
+                    name_en: "1.11、加载shp",
+                    thumbnail: "1.11、加载shp.png",
+                    fileName: "1.11、加载shp"
+                },
+                {
+                    name: "1.12、加载mvt",
+                    name_en: "1.12、加载mvt",
+                    thumbnail: "1.12、加载mvt.png",
+                    fileName: "1.12、加载mvt"
+                },
+                {
+                    name: "1.13、地表透明度",
+                    name_en: "1.13、地表透明度",
+                    thumbnail: "1.13、地表透明度.png",
+                    fileName: "1.13、地表透明度"
+                },
+                {
+                    name: "1.14、倾斜摄影单体",
+                    name_en: "1.14、倾斜摄影单体",
+                    thumbnail: "1.14、倾斜摄影单体.png",
+                    fileName: "1.14、倾斜摄影单体"
+                },
+                {
                     name: "1.15、罗盘、导航条",
                     name_en: "1.15、罗盘、导航条",
                     thumbnail: "1.15、罗盘、导航条.png",
