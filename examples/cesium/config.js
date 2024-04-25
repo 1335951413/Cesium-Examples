@@ -35,6 +35,12 @@ var exampleConfig = {
                     fileName: "1.4、屏幕、场景、地表坐标"
                 },
                 {
+                    name: "1.5、相机",
+                    name_en: "1.5、相机",
+                    thumbnail: "1.5、相机.png",
+                    fileName: "1.5、相机"
+                },
+                {
                     name: "1.15、罗盘、导航条",
                     name_en: "1.15、罗盘、导航条",
                     thumbnail: "1.15、罗盘、导航条.png",
