@@ -15,32 +15,22 @@
     <script type="text/javascript">
 
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M'
-        const viewer = new Cesium.Viewer('map', {
-            geocoder: false,
-            homeButton: false,
-            sceneModePicker: false,
-            baseLayerPicker: false,
-            navigationHelpButton: false,
-            animation: false,
-            timeline: false,
-            fullscreenButton: false,
-            creditContainer: document.createElement("div")
-        });
-        // 清除默认底图
-        viewer.imageryLayers.remove(viewer.imageryLayers.get(0));
-
-        // 清除默认地形
-        viewer.scene.terrainProvider = new Cesium.EllipsoidTerrainProvider({});
-
+        const viewer = new Cesium.Viewer('map', {});
         // 开启帧率
         viewer.scene.debugShowFramesPerSecond = true;
 
-        // 加载单张图片
-        var imageryProvider = new Cesium.SingleTileImageryProvider({
-            "url": "./word.jpg",
-            id: '1'
+        // 加载wms
+        var wms = new Cesium.WebMapServiceImageryProvider({
+            url:
+                "https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi?",
+            layers: "nexrad-n0r",
+            credit: "demo",
+            parameters: {
+                transparent: "true",
+                format: "image/png",
+            },
         })
-        viewer.imageryLayers.addImageryProvider(imageryProvider)
+        viewer.imageryLayers.addImageryProvider(wms)
 
 
     </script>

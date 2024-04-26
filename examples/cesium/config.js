@@ -8,7 +8,7 @@ var exampleConfig = {
         name_en: "base",
         content: {
             "map": {
-                name: "基础",
+                name: "1.1、基础",
                 name_en: "base",
                 content: [{
                     name: "1.1、默认设置",
@@ -100,6 +100,12 @@ var exampleConfig = {
                     thumbnail: "1.15、罗盘、导航条.png",
                     fileName: "1.15、罗盘、导航条"
                 },
+                {
+                    name: "1.16、绕点飞行",
+                    name_en: "1.16、绕点飞行",
+                    thumbnail: "1.16、绕点飞行.png",
+                    fileName: "1.16、绕点飞行"
+                },
                 // {
                 //     name: "相机",
                 //     name_en: "相机",
@@ -123,19 +129,31 @@ var exampleConfig = {
         name_en: "layer",
         content: {
             "map1": {
-                name: "影像",
+                name: "2.1、影像",
                 name_en: "tiles",
                 content: [{
-                    name: "单张图片",
-                    name_en: "单张图片",
-                    thumbnail: "2.1.1、img.png",
-                    fileName: "2.1.1、img"
+                    name: "2.1.1、单张图片",
+                    name_en: "2.1.1、单张图片",
+                    thumbnail: "2.1.1、单张图片.png",
+                    fileName: "2.1.1、单张图片"
                 },
                 {
-                    name: "xyz服务",
-                    name_en: "xyz服务",
-                    thumbnail: "2.1.2、xyz.png",
-                    fileName: "2.1.2、xyz"
+                    name: "2.1.2、xyz服务",
+                    name_en: "2.1.2、xyz服务",
+                    thumbnail: "2.1.2、xyz服务.png",
+                    fileName: "2.1.2、xyz服务"
+                },
+                {
+                    name: "2.1.3、tms服务",
+                    name_en: "2.1.3、tms服务",
+                    thumbnail: "2.1.3、tms服务.png",
+                    fileName: "2.1.3、tms服务"
+                },
+                {
+                    name: "2.1.4、wms服务",
+                    name_en: "2.1.4、wms服务",
+                    thumbnail: "2.1.4、wms服务.png",
+                    fileName: "2.1.4、wms服务"
                 },
                 ]
             },
