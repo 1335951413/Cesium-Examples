@@ -106,21 +106,27 @@ var exampleConfig = {
                     thumbnail: "1.16、绕点飞行.png",
                     fileName: "1.16、绕点飞行"
                 },
-                // {
-                //     name: "相机",
-                //     name_en: "相机",
-                //     thumbnail: "1.5、相机.png",
-                //     fileName: "1.5、相机"
-                // },
-                // {
-                //     name: "事件",
-                //     name_en: "事件",
-                //     thumbnail: "1.6、事件",
-                //     fileName: "1.6、事件"
-                // }
-                
-                
-            ]
+                {
+                    name: "1.17、深度检测",
+                    name_en: "1.17、深度检测",
+                    thumbnail: "1.17、深度检测.png",
+                    fileName: "1.17、深度检测"
+                },
+                    // {
+                    //     name: "相机",
+                    //     name_en: "相机",
+                    //     thumbnail: "1.5、相机.png",
+                    //     fileName: "1.5、相机"
+                    // },
+                    // {
+                    //     name: "事件",
+                    //     name_en: "事件",
+                    //     thumbnail: "1.6、事件",
+                    //     fileName: "1.6、事件"
+                    // }
+
+
+                ]
             },
         }
     },
@@ -130,7 +136,7 @@ var exampleConfig = {
         content: {
             "map1": {
                 name: "2.1、影像",
-                name_en: "tiles",
+                name_en: "2.1、影像",
                 content: [{
                     name: "2.1.1、单张图片",
                     name_en: "2.1.1、单张图片",
@@ -155,24 +161,74 @@ var exampleConfig = {
                     thumbnail: "2.1.4、wms服务.png",
                     fileName: "2.1.4、wms服务"
                 },
+                {
+                    name: "2.1.5、wmts服务",
+                    name_en: "2.1.5、wmts服务",
+                    thumbnail: "2.1.5、wmts服务.png",
+                    fileName: "2.1.5、wmts服务"
+                },
+                {
+                    name: "2.1.6、天地图服务",
+                    name_en: "2.1.6、天地图服务",
+                    thumbnail: "2.1.6、天地图服务.png",
+                    fileName: "2.1.6、天地图服务"
+                },
+                {
+                    name: "2.1.7、4490服务",
+                    name_en: "2.1.7、4490服务",
+                    thumbnail: "2.1.7、4490服务.png",
+                    fileName: "2.1.7、4490服务"
+                },
+                {
+                    name: "2.1.8、4490服务2",
+                    name_en: "2.1.8、4490服务2",
+                    thumbnail: "2.1.8、4490服务2.png",
+                    fileName: "2.1.8、4490服务2"
+                },
+                {
+                    name: "2.1.9、影像操作",
+                    name_en: "2.1.9、影像操作",
+                    thumbnail: "2.1.9、影像操作.png",
+                    fileName: "2.1.9、影像操作"
+                },
+                {
+                    name: "2.1.10、加载shp",
+                    name_en: "2.1.10、加载shp",
+                    thumbnail: "1.11、加载shp.png",
+                    fileName: "1.11、加载shp"
+                },
+                {
+                    name: "2.1.11、加载mvt",
+                    name_en: "2.1.11、加载mvt",
+                    thumbnail: "1.12、加载mvt.png",
+                    fileName: "1.12、加载mvt"
+                },
                 ]
             },
-            // "map2": {
-            //     name: "矢量",
-            //     name_en: "shp",
-            //     content: [{
-            //         name: "test",
-            //         name_en: "test",
-            //         thumbnail: "test.png",
-            //         fileName: "test"
-            //     },
-            //     {
-            //         name: "test2",
-            //         name_en: "test2",
-            //         thumbnail: "test2.png",
-            //         fileName: "test2"
-            //     }]
-            // },
+            "map2": {
+                name: "2.2、地形",
+                name_en: "2.2、地形",
+                content: [
+                    {
+                        name: "2.2.1、离线地形",
+                        name_en: "2.3.1、离线地形",
+                        thumbnail: "2.2.1、离线地形.png",
+                        fileName: "2.2.1、离线地形"
+                    },
+                    {
+                        name: "2.2.2、默认地形",
+                        name_en: "2.2.2、默认地形",
+                        thumbnail: "2.2.2、默认地形.png",
+                        fileName: "2.2.2、默认地形"
+                    },
+                    {
+                        name: "2.2.3、地形夸张",
+                        name_en: "2.2.3、地形夸张",
+                        thumbnail: "2.2.3、地形夸张.png",
+                        fileName: "2.2.3、地形夸张"
+                    },
+                ]
+            },
         }
     },
 };

@@ -88,11 +88,30 @@
             }
         });
 
-        // 第一人称
-        // viewer.trackedEntity = entity;
-        
         // 开启运动
         viewer.clock.shouldAnimate = true;
+
+        // 第三人称
+        // viewer.trackedEntity = entity;
+
+        // 第一人称
+        viewer.scene.preUpdate.addEventListener(traceHandler)
+
+        // https://blog.csdn.net/dandan__666/article/details/115293860
+        // https://blog.csdn.net/AllBluefm/article/details/137928976
+
+        function traceHandler() {
+            let center = entity.position.getValue(
+                viewer.clock.currentTime
+            );
+            let orientation = entity.orientation.getValue(
+                viewer.clock.currentTime
+            )
+            let transform = Cesium.Transforms.eastNorthUpToFixedFrame(center);
+            transform = Cesium.Matrix4.fromRotationTranslation(Cesium.Matrix3.fromQuaternion(orientation), center);
+            viewer.camera.lookAtTransform(transform, new Cesium.Cartesian3(-20, 0, 30))
+        }
+
     </script>
 </body>
 
