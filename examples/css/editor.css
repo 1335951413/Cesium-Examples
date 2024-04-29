@@ -93,7 +93,7 @@ html, body, .wrapper {
     cursor: pointer;
     z-index: 900;
     position: absolute;
-    top: 4px;
+    top: 100px;
     right: 0;
     padding: 0 10px;
     min-width: 54px;

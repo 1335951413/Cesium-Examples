@@ -211,7 +211,7 @@ var exampleConfig = {
                 content: [
                     {
                         name: "2.2.1、离线地形",
-                        name_en: "2.3.1、离线地形",
+                        name_en: "2.2.1、离线地形",
                         thumbnail: "2.2.1、离线地形.png",
                         fileName: "2.2.1、离线地形"
                     },
@@ -226,6 +226,60 @@ var exampleConfig = {
                         name_en: "2.2.3、地形夸张",
                         thumbnail: "2.2.3、地形夸张.png",
                         fileName: "2.2.3、地形夸张"
+                    },
+                ]
+            },
+            "map3": {
+                name: "2.3、矢量",
+                name_en: "2.3、矢量",
+                content: [
+                    {
+                        name: "2.3.1、entity点",
+                        name_en: "2.3.1、entity点",
+                        thumbnail: "2.3.1、entity点.png",
+                        fileName: "2.3.1、entity点"
+                    },
+                    {
+                        name: "2.3.2、entity线",
+                        name_en: "2.3.2、entity线",
+                        thumbnail: "2.3.2、entity线.png",
+                        fileName: "2.3.2、entity线"
+                    },
+                    {
+                        name: "2.3.3、entity面",
+                        name_en: "2.3.3、entity面",
+                        thumbnail: "2.3.3、entity面.png",
+                        fileName: "2.3.3、entity面"
+                    },
+                    {
+                        name: "2.3.4、图标",
+                        name_en: "2.3.4、图标",
+                        thumbnail: "2.3.4、图标.png",
+                        fileName: "2.3.4、图标"
+                    },
+                    {
+                        name: "2.3.5、海量图标",
+                        name_en: "2.3.5、海量图标",
+                        thumbnail: "2.3.5、海量图标.png",
+                        fileName: "2.3.5、海量图标"
+                    },
+                    {
+                        name: "2.3.6、popup",
+                        name_en: "2.3.6、popup",
+                        thumbnail: "2.3.6、popup.png",
+                        fileName: "2.3.6、popup"
+                    },
+                    {
+                        name: "2.3.7、geojson",
+                        name_en: "2.3.7、geojson",
+                        thumbnail: "2.3.7、geojson.png",
+                        fileName: "2.3.7、geojson"
+                    },
+                    {
+                        name: "2.3.8、Primitive",
+                        name_en: "2.3.8、Primitive",
+                        thumbnail: "2.3.8、Primitive.png",
+                        fileName: "2.3.8、Primitive"
                     },
                 ]
             },
