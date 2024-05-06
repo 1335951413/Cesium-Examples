@@ -281,6 +281,12 @@ var exampleConfig = {
                         thumbnail: "2.3.8、Primitive.png",
                         fileName: "2.3.8、Primitive"
                     },
+                    {
+                        name: "2.3.9、AllPrimitive",
+                        name_en: "2.3.9、AllPrimitive",
+                        thumbnail: "2.3.9、AllPrimitive.png",
+                        fileName: "2.3.9、AllPrimitive"
+                    },
                 ]
             },
         }
