@@ -293,6 +293,18 @@ var exampleConfig = {
                         thumbnail: "2.3.10、entityCollection.png",
                         fileName: "2.3.10、entityCollection"
                     },
+                    {
+                        name: "2.3.11、entity操作",
+                        name_en: "2.3.11、entity操作",
+                        thumbnail: "2.3.11、entity操作.png",
+                        fileName: "2.3.11、entity操作"
+                    },
+                    {
+                        name: "2.3.12、气泡窗口",
+                        name_en: "2.3.12、气泡窗口",
+                        thumbnail: "1.9、气泡窗口.png",
+                        fileName: "2.3.12、气泡窗口"
+                    },
                 ]
             },
         }
