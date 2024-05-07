@@ -303,7 +303,24 @@ var exampleConfig = {
                         name: "2.3.12、气泡窗口",
                         name_en: "2.3.12、气泡窗口",
                         thumbnail: "1.9、气泡窗口.png",
-                        fileName: "2.3.12、气泡窗口"
+                        fileName: "1.9、气泡窗口"
+                    },
+                    {
+                        name: "2.3.13、气泡弹窗",
+                        name_en: "2.3.13、气泡弹窗",
+                        thumbnail: "2.3.13、气泡弹窗.png",
+                        fileName: "2.3.13、气泡弹窗"
+                    },
+                ]
+            }, "map4": {
+                name: "2.4、模型",
+                name_en: "2.4、模型",
+                content: [
+                    {
+                        name: "2.4.1、加载模型",
+                        name_en: "2.4.1、加载模型",
+                        thumbnail: "2.4.1、加载模型.png",
+                        fileName: "2.4.1、加载模型"
                     },
                 ]
             },
