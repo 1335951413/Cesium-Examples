@@ -312,7 +312,7 @@ var exampleConfig = {
                         fileName: "2.3.13、气泡弹窗"
                     },
                 ]
-            }, 
+            },
             "map4": {
                 name: "2.4、模型",
                 name_en: "2.4、模型",
