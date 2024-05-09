@@ -335,6 +335,54 @@ var exampleConfig = {
                         thumbnail: "2.4.3、primitive加载大量模型.png",
                         fileName: "2.4.3、primitive加载大量模型"
                     },
+                    {
+                        name: "2.4.4、模型运动",
+                        name_en: "2.4.4、模型运动",
+                        thumbnail: "1.8、时间运动.png",
+                        fileName: "1.8、时间运动"
+                    },
+                    {
+                        name: "2.4.5、模型插值运动",
+                        name_en: "2.4.5、模型插值运动",
+                        thumbnail: "2.4.5、模型插值运动.png",
+                        fileName: "2.4.5、模型插值运动"
+                    },
+                ]
+            },
+        }
+    },
+    "Online": {
+        name: "3、3Dtiles",
+        name_en: "3、3Dtiles",
+        content: {
+            "map5": {
+                name: "3.1、影像",
+                name_en: "3.1、影像",
+                content: [
+                    {
+                        name: "3.1.1、加载模型",
+                        name_en: "3.1.1、加载模型",
+                        thumbnail: "3.1.1、加载模型.png",
+                        fileName: "3.1.1、加载模型"
+                    },
+                    {
+                        name: "3.1.2、模型偏移",
+                        name_en: "3.1.2、模型偏移",
+                        thumbnail: "3.1.2、模型偏移.png",
+                        fileName: "3.1.2、模型偏移"
+                    },
+                    {
+                        name: "3.1.3、模型位置编辑",
+                        name_en: "3.1.3、模型位置编辑",
+                        thumbnail: "3.1.3、模型位置编辑.png",
+                        fileName: "3.1.3、模型位置编辑"
+                    },
+                    {
+                        name: "3.1.4、customShader自定义材质",
+                        name_en: "3.1.4、customShader自定义材质",
+                        thumbnail: "3.1.4、customShader自定义材质.png",
+                        fileName: "3.1.4、customShader自定义材质"
+                    },
                 ]
             },
         }

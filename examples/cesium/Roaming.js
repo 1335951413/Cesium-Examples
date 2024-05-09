@@ -250,7 +250,7 @@
         }
       }
       _this.viewer.scene.preUpdate.addEventListener(Exection);
-      // _this.changingView(1);
+      _this.changingView(2);
     }
     /**
      *漫游的暂停和继续
