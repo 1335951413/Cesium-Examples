@@ -323,6 +323,18 @@ var exampleConfig = {
                         thumbnail: "2.4.1、加载模型.png",
                         fileName: "2.4.1、加载模型"
                     },
+                    {
+                        name: "2.4.2、primitive加载模型",
+                        name_en: "2.4.2、primitive加载模型",
+                        thumbnail: "2.4.2、primitive加载模型.png",
+                        fileName: "2.4.2、primitive加载模型"
+                    },
+                    {
+                        name: "2.4.3、primitive加载大量模型",
+                        name_en: "2.4.3、primitive加载大量模型",
+                        thumbnail: "2.4.3、primitive加载大量模型.png",
+                        fileName: "2.4.3、primitive加载大量模型"
+                    },
                 ]
             },
         }
