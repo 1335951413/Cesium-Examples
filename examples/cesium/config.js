@@ -383,6 +383,12 @@ var exampleConfig = {
                         thumbnail: "3.1.4、customShader自定义材质.png",
                         fileName: "3.1.4、customShader自定义材质"
                     },
+                    {
+                        name: "3.1.5、customShader自定义材质2",
+                        name_en: "3.1.5、customShader自定义材质2",
+                        thumbnail: "3.1.5、customShader自定义材质2.png",
+                        fileName: "3.1.5、customShader自定义材质2"
+                    },
                 ]
             },
         }
