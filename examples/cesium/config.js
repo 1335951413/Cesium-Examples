@@ -356,8 +356,8 @@ var exampleConfig = {
         name_en: "3、3Dtiles",
         content: {
             "map5": {
-                name: "3.1、影像",
-                name_en: "3.1、影像",
+                name: "3.1、3Dtiles",
+                name_en: "3.1、3Dtiles",
                 content: [
                     {
                         name: "3.1.1、加载模型",
@@ -388,6 +388,30 @@ var exampleConfig = {
                         name_en: "3.1.5、customShader自定义材质2",
                         thumbnail: "3.1.5、customShader自定义材质2.png",
                         fileName: "3.1.5、customShader自定义材质2"
+                    },
+                ]
+            },
+        }
+    },
+    "iManager": {
+        name: "4、空间分析",
+        name_en: "4、空间分析",
+        content: {
+            "map5": {
+                name: "4.1、空间分析",
+                name_en: "4.1、空间分析",
+                content: [
+                    {
+                        name: "4.1.1、地形开挖",
+                        name_en: "4.1.1、地形开挖",
+                        thumbnail: "4.1.1、地形开挖.png",
+                        fileName: "4.1.1、地形开挖"
+                    },
+                    {
+                        name: "4.1.2、可视域分析",
+                        name_en: "4.1.2、可视域分析",
+                        thumbnail: "4.1.2、可视域分析.png",
+                        fileName: "4.1.2、可视域分析"
                     },
                 ]
             },
