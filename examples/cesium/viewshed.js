@@ -294,25 +294,25 @@ class viewshed extends analyser {
         vec3 getNormalEC(){
             return vec3(1.);
         }
-        vec4 toEye(in vec2 uv,in float depth){
+        vec4 toEye( vec2 uv, float depth){
             vec2 xy=vec2((uv.x*2.-1.),(uv.y*2.-1.));
             vec4 posInCamera=czm_inverseProjection*vec4(xy,depth,1.);
             posInCamera=posInCamera/posInCamera.w;
             return posInCamera;
         }
-        vec3 pointProjectOnPlane(in vec3 planeNormal,in vec3 planeOrigin,in vec3 point){
+        vec3 pointProjectOnPlane( vec3 planeNormal, vec3 planeOrigin, vec3 point){
             vec3 v01=point-planeOrigin;
             float d=dot(planeNormal,v01);
             return(point-planeNormal*d);
         }
-        float getDepth(in vec4 depth){
+        float getDepth( vec4 depth){
             float z_window=czm_unpackDepth(depth);
             z_window=czm_reverseLogDepth(z_window);
             float n_range=czm_depthRange.near;
             float f_range=czm_depthRange.far;
             return(2.*z_window-n_range-f_range)/(f_range-n_range);
         }
-        float shadow(in vec4 positionEC){
+        float shadow( vec4 positionEC){
             vec3 normalEC=getNormalEC();
             zx_shadowParameters shadowParameters;
             shadowParameters.texelStepSize=shadowMap_texelSizeDepthBiasAndNormalShadingSmooth.xy;
@@ -334,7 +334,7 @@ class viewshed extends analyser {
             float visibility=czm_shadowVisibility(shadowMap_textureCube,shadowParameters);
             return visibility;
         }
-        bool visible(in vec4 result)
+        bool visible( vec4 result)
         {
             result.x/=result.w;
             result.y/=result.w;

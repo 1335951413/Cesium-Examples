@@ -413,6 +413,24 @@ var exampleConfig = {
                         thumbnail: "4.1.2、可视域分析.png",
                         fileName: "4.1.2、可视域分析"
                     },
+                    {
+                        name: "4.1.3、淹没分析（简易）",
+                        name_en: "4.1.3、淹没分析（简易）",
+                        thumbnail: "4.1.3、淹没分析（简易）.png",
+                        fileName: "4.1.3、淹没分析（简易）"
+                    },
+                    {
+                        name: "4.1.4、淹没分析",
+                        name_en: "4.1.4、淹没分析",
+                        thumbnail: "4.1.4、淹没分析.png",
+                        fileName: "4.1.4、淹没分析"
+                    },
+                    {
+                        name: "4.1.5、缓冲分析",
+                        name_en: "4.1.5、缓冲分析",
+                        thumbnail: "4.1.5、缓冲分析.png",
+                        fileName: "4.1.5、缓冲分析"
+                    },
                 ]
             },
         }
