@@ -443,6 +443,19 @@ var exampleConfig = {
                         thumbnail: "4.1.7、方量分析.png",
                         fileName: "4.1.7、方量分析"
                     },
+                    {
+                        name: "4.1.8、透视分析",
+                        name_en: "4.1.8、透视分析",
+                        thumbnail: "4.1.8、透视分析.png",
+                        fileName: "4.1.8、透视分析"
+                    },
+                    {
+                        name: "4.1.9、剖面分析",
+                        name_en: "4.1.9、剖面分析",
+                        thumbnail: "4.1.9、剖面分析.png",
+                        fileName: "4.1.9、剖面分析"
+                    },
+                    
                 ]
             },
         }

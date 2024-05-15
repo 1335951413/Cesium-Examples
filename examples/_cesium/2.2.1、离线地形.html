@@ -33,6 +33,14 @@
         //     url: 'http://localhost/tdt/dem_30m'
         // });
 
+        // 监听地形提供者的ready事件
+        viewer.terrainProvider.readyPromise.then(function (terrainProvider) {
+            // 地形已加载完成，可以进行相关操作
+            console.log('Terrain is now ready.');
+        }).otherwise(function (error) {
+            // 地形加载失败，处理错误
+            console.error('Terrain error: ' + error);
+        });
 
     </script>
 </body>

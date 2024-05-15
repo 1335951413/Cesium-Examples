@@ -10,6 +10,7 @@
     <script type="text/javascript" src="./../../cesium/Cesium1.98/Cesium.js"></script>
     <script src="./turf.min.js"></script>
     <script src="./measureVolume.js"></script>
+    <script src="./jquery-1.8.3.min.js"></script>
     <style>
         #menu {
             position: absolute;
@@ -31,10 +32,20 @@
     <div id="map" style="margin: 0 auto; width: 100%; height: 100%"></div>
 
     <div id="menu">
-        <button onclick="load()">加载</button>
-        <button onclick="clears()">清除</button>
-        <button onclick="hz()">绘制</button>
-        <button onclick="tz()">调整</button>
+        <p>
+            <button onclick="load()">绘制</button>
+            <button onclick="clears()">清除</button>
+            <button onclick="tz()">调整</button>
+        </p>
+        <p>
+            基准面高 <input id="txtHeight" type="text"><br>
+            围墙底高 <input id="txtMinHeight" type="text"> <br>
+            围墙顶高<input id="txtMaxHeight" type="text">(墙显示效果，与结算结果无关) 
+        </p>
+        <p>
+            1. 挖方量: 计算“基准面”到地表之间的凸出部分进行挖掉的体积。 <br>
+            2. 填方量：计算“基准面”与“墙底部”之间的缺少部分进行填平的体积。 
+        </p>
     </div>
     <script type="text/javascript">
 
@@ -58,36 +69,23 @@
         var measureVolume = new MeasureVolume(viewer);
 
         function load() {
-            // measureVolume.initMeasure([
-            //     Cesium.Cartesian3.fromDegrees(115.1, 27.1, 350.0),
-            //     Cesium.Cartesian3.fromDegrees(115.1, 27.2, 250.0),
-            //     Cesium.Cartesian3.fromDegrees(115.2, 27.2, 250.0),
-            //     Cesium.Cartesian3.fromDegrees(115.2, 27.1, 350.0),
-            //     Cesium.Cartesian3.fromDegrees(115.1, 27.1, 350.0),
-            // ])
-
             // 挖填方返回的数据
-            measureVolume.initMeasureVolume((data) =>{
-                // $('#txtHeight').val(data.planeHeight.toFixed(1));
-                // $('#txtMinHeight').val(data.wallMinHeight.toFixed(1));
-                // $('#txtMaxHeight').val(data.wallMaxHeight.toFixed(1));
-            });  
+            measureVolume.initMeasureVolume((data) => {
+                $('#txtHeight').val(data.planeHeight.toFixed(1));
+                $('#txtMinHeight').val(data.wallMinHeight.toFixed(1));
+                $('#txtMaxHeight').val(data.wallMaxHeight.toFixed(1));
+            });
         }
 
         function clears() {
             measureVolume.clear();
         }
 
-        function hz() {
-            measureVolume.initMeasureVolume((data) => {
-                console.log(data)
-            });
-        }
         function tz() {
             measureVolume.setParameters({
-                planeHeight: 4000, //基准面高
-                wallMinHeight: 3000, //围墙底高
-                wallMaxHeight: 6000, //围墙顶高 围墙顶高只是展示效果，与计算结果无关。
+                planeHeight:  Number($('#txtHeight').val()), //基准面高
+                wallMinHeight:  Number($('#txtMinHeight').val()), //围墙底高
+                wallMaxHeight:  Number($('#txtMaxHeight').val()), //围墙顶高 围墙顶高只是展示效果，与计算结果无关。
             }, (data) => {
                 console.log(data)
             })
