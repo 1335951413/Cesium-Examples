@@ -193,11 +193,11 @@
             }
             TerrainToolCopy.LonlatPointsTerrainData( _this.viewer.terrainProvider, lonlats, _this.optS.terrainLevel, (positions) => {
                 _this.getVolumn(positions,true);
-                // callback({
-                //     planeHeight:_this.minHeight,
-                //     wallMinHeight:_this.minHeight,
-                //     wallMaxHeight:_this.maxHeight
-                // })
+                callback({
+                    planeHeight:_this.minHeight,
+                    wallMinHeight:_this.minHeight,
+                    wallMaxHeight:_this.maxHeight
+                })
             })
             
     };
@@ -239,6 +239,7 @@
         let minimumHeights = [];
         let maximumHeights = [];
         _this.Cartesian2Array.forEach(element => {
+            console.log(element)
             element.forEach((element1,index) => {
                 Cartesian3Array.push(element1);
                 if(index==1){
@@ -397,26 +398,20 @@
 }
 
 function findMinHeight(e) {
-    let minHeight = 0;
-    let minPoint = null;
-    for (let i = 0; i < e.length; i++) {
-        let height = e[i];
-        if (height < minHeight) {
-            minHeight = height;
-        }
-    }
-    return minHeight;
+    e = e.sort((a, b) => a - b);
+    // let minHeight = 0;
+    // let minPoint = null;
+    // for (let i = 0; i < e.length; i++) {
+    //     let height = e[i];
+    //     if (height < minHeight) {
+    //         minHeight = height;
+    //     }
+    // }
+    return e[0];
 }
 function findMaxHeight(e) {
-    let maxHeight = 0;
-    let minPoint = null;
-    for (let i = 0; i < e.length; i++) {
-        let height = e[i];
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    }
-    return maxHeight;
+    e = e.sort((a, b) => b - a);
+    return e[0];
 }
 //获取高程
 var TerrainToolCopy = (
