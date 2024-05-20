@@ -4,20 +4,55 @@ var identification = {
 };
 var exampleConfig = {
     "base": {
-        name: "1、基础",
+        name: "1、入门",
         name_en: "base",
         content: {
             "map": {
-                name: "1.1、基础",
+                name: "1.1、入门",
                 name_en: "base",
-                content: [{
-                    name: "1.1、默认设置",
-                    name_en: "1.1、默认设置",
-                    thumbnail: "1.1、默认设置.png",
-                    fileName: "1.1、默认设置"
-                },
-
-
+                content: [
+                    {
+                        name: "1.1.1、入门",
+                        name_en: "1.1.1、入门",
+                        thumbnail: "1.1.1、入门.png",
+                        fileName: "1.1.1、入门"
+                    },
+                    {
+                        name: "1.1.2、辅助线",
+                        name_en: "1.1.2、辅助线",
+                        thumbnail: "1.1.2、辅助线.png",
+                        fileName: "1.1.2、辅助线"
+                    },
+                    {
+                        name: "1.1.3、光线",
+                        name_en: "1.1.3、光线",
+                        thumbnail: "1.1.3、光线.png",
+                        fileName: "1.1.3、光线"
+                    },
+                    {
+                        name: "1.1.4、相机控件",
+                        name_en: "1.1.4、相机控件",
+                        thumbnail: "1.1.4、相机控件.png",
+                        fileName: "1.1.4、相机控件"
+                    },
+                    {
+                        name: "1.1.5、动画",
+                        name_en: "1.1.5、动画",
+                        thumbnail: "1.1.5、动画.png",
+                        fileName: "1.1.5、动画"
+                    },
+                    {
+                        name: "1.1.6、全屏",
+                        name_en: "1.1.6、全屏",
+                        thumbnail: "1.1.6、全屏.png",
+                        fileName: "1.1.6、全屏"
+                    },
+                    {
+                        name: "1.1.7、帧率",
+                        name_en: "1.1.7、帧率",
+                        thumbnail: "1.1.7、帧率.png",
+                        fileName: "1.1.7、帧率"
+                    },
                 ]
             },
         }

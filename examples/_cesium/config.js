@@ -458,6 +458,32 @@ var exampleConfig = {
                     
                 ]
             },
+            "map6": {
+                name: "4.2、量算",
+                name_en: "4.2、量算",
+                content: [
+                    {
+                        name: "4.2.1、量算工具",
+                        name_en: "4.2.1、量算工具",
+                        thumbnail: "4.2.1、量算工具.png",
+                        fileName: "4.2.1、量算工具"
+                    },
+                    
+                ]
+            },
+            "map7": {
+                name: "4.3、视频融合",
+                name_en: "4.3、视频融合",
+                content: [
+                    {
+                        name: "4.3.1、视频纹理",
+                        name_en: "4.3.1、视频纹理",
+                        thumbnail: "4.3.1、视频纹理.png",
+                        fileName: "4.3.1、视频纹理"
+                    },
+                    
+                ]
+            },
         }
     },
 };
