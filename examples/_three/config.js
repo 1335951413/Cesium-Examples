@@ -53,11 +53,72 @@ var exampleConfig = {
                         thumbnail: "1.1.7、帧率.png",
                         fileName: "1.1.7、帧率"
                     },
+                    {
+                        name: "1.1.8、阵列模型",
+                        name_en: "1.1.8、阵列模型",
+                        thumbnail: "1.1.8、阵列模型.png",
+                        fileName: "1.1.8、阵列模型"
+                    },
+                    {
+                        name: "1.1.9、几何体",
+                        name_en: "1.1.9、几何体",
+                        thumbnail: "1.1.9、几何体.png",
+                        fileName: "1.1.9、几何体"
+                    },
                 ]
             },
         }
     },
 
+    "iPortal": {
+        name: "2、几何体BufferGeometry",
+        name_en: "2、几何体BufferGeometry",
+        content: {
+            "map": {
+                name: "2.1、几何体BufferGeometry",
+                name_en: "2.1、几何体BufferGeometry",
+                content: [
+                    {
+                        name: "2.1.1、点、线",
+                        name_en: "2.1.1、点、线",
+                        thumbnail: "2.1.1、点、线.png",
+                        fileName: "2.1.1、点、线"
+                    },
+                    {
+                        name: "2.1.2、网格",
+                        name_en: "2.1.2、网格",
+                        thumbnail: "2.1.2、网格.png",
+                        fileName: "2.1.2、网格"
+                    },
+                    {
+                        name: "2.1.3、索引",
+                        name_en: "2.1.3、索引",
+                        thumbnail: "2.1.3、索引.png",
+                        fileName: "2.1.3、索引"
+                    },
+                    {
+                        name: "2.1.4、旋转、缩放、平移几何体",
+                        name_en: "2.1.4、旋转、缩放、平移几何体",
+                        thumbnail: "2.1.4、旋转、缩放、平移几何体.png",
+                        fileName: "2.1.4、旋转、缩放、平移几何体"
+                    },
+                    {
+                        name: "2.1.5、自带几何体顶点",
+                        name_en: "2.1.5、自带几何体顶点",
+                        thumbnail: "2.1.5、自带几何体顶点.png",
+                        fileName: "2.1.5、自带几何体顶点"
+                    },
+                    {
+                        name: "2.1.6、顶点颜色",
+                        name_en: "2.1.6、顶点颜色",
+                        thumbnail: "2.1.6、顶点颜色.png",
+                        fileName: "2.1.6、顶点颜色"
+                    },
+                ]
+            },
+            
+        }
+    },
 };
 
 
