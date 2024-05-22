@@ -30,46 +30,47 @@
         import * as THREE from 'three';
         import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-        const scene = new THREE.Scene();
+        // 场景
+        const scene = new THREE.Scene();// 创建场景
+        //BoxGeometry：长方体
+        const geometry1 = new THREE.BoxGeometry(10, 10, 10);
+        // SphereGeometry：球体
+        const geometry2 = new THREE.SphereGeometry(10);
+        // CylinderGeometry：圆柱
+        const geometry3 = new THREE.CylinderGeometry(10, 10, 100);
 
-        // 网格模型Mesh其实就一个一个三角形(面)拼接构成
-        const geometry = new THREE.BufferGeometry();
-        const vertices = new Float32Array([
-            0, 0, 0,
-            50, 0, 0,
-            50, 0, 50,
+        // PlaneGeometry：矩形平面
+        // 几何体细分数
+        const geometry4 = new THREE.PlaneGeometry(10, 50,10,10);
+        // CircleGeometry：圆形平面
+        const geometry5 = new THREE.CircleGeometry(10);
 
-            0, 0, 0,
-            0, 0, 50,
-            50, 0, 50,
-        ]);
+        const material = new THREE.MeshBasicMaterial({ color: 0xff0000 }); //材质 
 
-        geometry.attributes.position = new THREE.BufferAttribute(vertices, 3);
+        const mesh1 = new THREE.Mesh(geometry1, material); 
+        mesh1.position.set(0, 0, 0);
+        const mesh2 = new THREE.Mesh(geometry2, material); 
+        mesh2.position.set(0, 0, 30);
+        const mesh3 = new THREE.Mesh(geometry3, material); 
+        mesh3.position.set(0, 0, 60);
+        const mesh4 = new THREE.Mesh(geometry4, material); 
+        mesh4.position.set(0, 0, 90);
+        const mesh5 = new THREE.Mesh(geometry5, material); 
+        mesh5.position.set(0, 0, 120);
 
+        scene.add(mesh1); 
+        scene.add(mesh2); 
+        scene.add(mesh3); 
+        scene.add(mesh4); 
+        scene.add(mesh5); 
 
-        // 点渲染模式
-        const material2 = new THREE.PointsMaterial({
-            color: 0xffff00,
-            size: 10.0 //点对象像素尺寸
-        });
-        const points = new THREE.Points(geometry, material2); //点模型对象
-        scene.add(points);
+        console.log('顶点位置数据', geometry1);
+        console.log('顶点位置数据', geometry1.attributes.position);
+        console.log('顶点位置数据', geometry2.attributes.position);
+        console.log('顶点位置数据', geometry3.attributes.position);
+        console.log('顶点位置数据', geometry4.attributes.position);
+        console.log('顶点位置数据', geometry5.attributes.position);
 
-        // 线材质对象
-        const material1 = new THREE.LineBasicMaterial({
-            color: 0xff0000 //线条颜色
-        });
-        // 创建线模型对象
-        const line = new THREE.Line(geometry, material1);
-        scene.add(line);
-
-        // 网格
-        const material = new THREE.MeshBasicMaterial({
-            color: 0x0000ff,
-            side: THREE.DoubleSide,
-        });
-        const mesh = new THREE.Mesh(geometry, material);
-        scene.add(mesh);
 
         // AxesHelper
         const axesHelper = new THREE.AxesHelper(150);
@@ -77,8 +78,8 @@
 
         // 相机
         const camera = new THREE.PerspectiveCamera();  //相机
-        camera.position.set(200, 200, 200); //相机位置
-        camera.lookAt(0, 0, 0);   //相机观察位置
+        camera.position.set(400, 300, 500); //相机位置
+        camera.lookAt(0, 50, 40);   //相机观察位置
 
         // 渲染器
         const renderer = new THREE.WebGLRenderer(); // 创建渲染器
@@ -86,10 +87,14 @@
         renderer.render(scene, camera); //执行渲染
         document.body.appendChild(renderer.domElement);
 
+
+        // 设置相机控件轨道控制器OrbitControls
         const controls = new OrbitControls(camera, renderer.domElement);
+        // 如果OrbitControls改变了相机参数，重新调用渲染器渲染三维场景
         controls.addEventListener('change', function () {
-            renderer.render(scene, camera);
-        });
+            renderer.render(scene, camera); //执行渲染操作
+            console.log(camera.position)
+        });//监听鼠标、键盘事件
     </script>
 
 </body>
