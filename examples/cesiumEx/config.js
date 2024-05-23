@@ -481,7 +481,12 @@ var exampleConfig = {
                         thumbnail: "4.3.1、视频纹理.png",
                         fileName: "4.3.1、视频纹理"
                     },
-                    
+                    {
+                        name: "4.3.2、视频投射",
+                        name_en: "4.3.2、视频投射",
+                        thumbnail: "4.3.2、视频投射.png",
+                        fileName: "4.3.2、视频投射"
+                    },
                 ]
             },
         }
