@@ -3,8 +3,7 @@
 *********************************************************************-->
 <!--头部导航-->
 <style>
-
-  .sssss a{
+  .sssss a {
     color: red !important;
   }
 </style>
@@ -18,12 +17,16 @@
 
 <!-- 侧边栏 -->
 <aside class="sidebar-wrapper main-sidebar" id="scrollSpy">
+  <script type="text/javascript"
+    src="//rf.revolvermaps.com/0/0/8.js?i=5mdz18j6m0u&amp;m=1&amp;c=ff0000&amp;cr1=fff600&amp;f=arial&amp;l=33&amp;s=227"
+    async="async"></script>
+
   <!-- sidebar: style can be found in sidebar.less -->
   <section class="sidebar" id="sidebar">
-    <a href="#" class="sidebar-toggle " data-toggle="offcanvas" role="button" title="fold">
+    <!-- <a href="#" class="sidebar-toggle " data-toggle="offcanvas" role="button" title="fold">
       <div class="fa  fa-bars fold"></div>
       <span id="suffix-title"></span>
-    </a>
+    </a> -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class=" sidebar-menu nav  nav-stacked" id="sidebar-menu">
 
@@ -41,6 +44,7 @@
 
 <!-- footer -->
 <footer class="main-footer icl-footer simple-footer"></footer>
+
 <!--footer end-->
 
 <script>
@@ -68,3 +72,9 @@
     }, 700)
   })
 </script>
+
+<style>
+  .main-sidebar iframe{
+    background: transparent !important;position: absolute;z-index: 1000;bottom: 0;
+  }
+</style>
