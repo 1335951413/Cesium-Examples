@@ -8,7 +8,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./../../cesium/Cesium1.98/Widgets/widgets.css">
     <script type="text/javascript" src="./../../cesium/Cesium1.98/Cesium.js"></script>
-    <script src="./ViewShed3D2.js"></script>
+    <script src="./video.js"></script>
+    <script src="./turf.min.js"></script>
+    <script src="./lodash.min.js"></script>
     <style>
         #menu {
             position: absolute;
@@ -22,10 +24,8 @@
         #video_dom {
             display: none;
             position: absolute;
-            top: 30vh;
-            left: 30vw;
-            transform: translate(-50%, -50%);
-            width: 70vw;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
         }
     </style>
 </head>
@@ -36,25 +36,61 @@
     </div>
     <video id="video_dom" preload="auto" autoPlay loop>
         <source src="./video.mp4" type="video/mp4" />
+        Your browser does not support the <code>video</code> element.
     </video>
+    <!-- ./video.mp4 -->
     <script type="text/javascript">
 
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M'
-        const viewer = new Cesium.Viewer('map', {});
+        const viewer = new Cesium.Viewer('map', {
+            contextOptions: {
+                requestWebgl1: true,
+            },
+        });
         viewer.scene.debugShowFramesPerSecond = true;
         viewer.scene.globe.depthTestAgainstTerrain = true;
+        viewer.camera.setView({
+            destination:  Cesium.Cartesian3.fromDegrees(85.788705, 45.163394, 2000),
 
-        new ViewShed3D2({
-            viewer,
-            viewPosition:new Cesium.Cartesian3( -2380808.4993323693, 4693804.3749265745,3591459.5356908515),
-            startPosition: new Cesium.Cartesian3( -2380808.4993323693, 4693804.3749265745,3591459.5356908515),
-            endPosition: new Cesium.Cartesian3(-2380647.770595138, 4693499.269441691, 3591332.42949116)
         });
+        var options = {
+            horizontalViewAngle: 60,
+            verticalViewAngle: 40,
+            video: "video_dom",
+            viewPosition:  Cesium.Cartesian3.fromDegrees(85.788705, 45.161394, 900),
+            viewPositionEnd: Cesium.Cartesian3.fromDegrees(85.788705, 45.167394, 500),
+        };
+        v = new video(viewer, options);
+        v.drawVideo();
 
-        viewer.camera.flyTo({
-            destination: new Cesium.Cartesian3(-2380647.770595138, 4693499.269441691, 3591332.42949116),
-            duration: 2,
-        });
+        // 播放
+        video_dom.play();
+        // 暂停
+        // video_dom.pause();
+
+        // 清除
+        // new video(viewer, {}).clearAll();
+
+        // 视角宽高比例
+        // v.change({
+        //     aspectRatio: 1.7
+        // })
+        // // 视角水平张角
+        // v.change({
+        //     fov: 1.2
+        // })
+        // // 视角距离
+        // v.change({
+        //     far: 200
+        // })
+
+        // 切换视频源
+        function switchSP() {
+            var videoSrc = '';
+            var hls = new Hls();
+            hls.loadSource(videoSrc);
+            hls.attachMedia(video_dom);
+        }
 
     </script>
 </body>
