@@ -1,0 +1,77 @@
+<!--********************************************************************
+* by jiawanlong
+*********************************************************************-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./../../cesium/Cesium1.98/Widgets/widgets.css">
+    <script type="text/javascript" src="./../../cesium/Cesium1.98/Cesium.js"></script>
+    <script src="./cesium-VideoShed3D.js"></script>
+    <style>
+        #menu {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+        }
+
+        #video_dom {
+            display: none;
+            position: absolute;
+            top: 30vh;
+            left: 30vw;
+            transform: translate(-50%, -50%);
+            width: 70vw;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; overflow: hidden; background: #fff; width: 100%; height: 100%; position: absolute; top: 0">
+    <div id="map" style="margin: 0 auto; width: 100%; height: 100%"></div>
+    <div id="menu">
+    </div>
+    <!-- ./video.mp4 -->
+    <script type="text/javascript">
+
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M'
+        const viewer = new Cesium.Viewer('map', {
+            contextOptions: {
+                requestWebgl1: true,
+            },
+        });
+        viewer.scene.debugShowFramesPerSecond = true;
+        viewer.scene.globe.depthTestAgainstTerrain = true;
+
+        var position = Cesium.Cartesian3.fromDegrees(120.619907115, 31.317987368, 500);//定义飞行终点的坐标
+        viewer.camera.flyTo({
+            destination: position,
+            orientation: {
+                heading: Cesium.Math.toRadians(0),
+                pitch: Cesium.Math.toRadians(-90),
+                roll: 0.0,
+            },
+            duration: 1,
+            complete: function () {
+            },
+        });
+
+        let viewModel = { verticalAngle: 90, horizontalAngle: 120, distance: 10 };
+        let videoShed3DArr = [];
+        let videoShed3D = new Cesium.VideoShed3D(viewer, {
+            type: 'Video',
+            url: "./video.mp4",
+            alpha: 1,
+            debugFrustum: true,
+            horizontalAngle: Number(viewModel.horizontalAngle),
+            verticalAngle: Number(viewModel.verticalAngle),
+            distance: Number(viewModel.distance),
+        });
+        videoShed3DArr.push(videoShed3D)
+    </script>
+</body>
+
+</html>
