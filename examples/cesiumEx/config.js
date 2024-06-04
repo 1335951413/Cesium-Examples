@@ -531,6 +531,18 @@ var exampleConfig = {
                     },
                 ]
             },
+            "map6": {
+                name: "5.2、回调相关",
+                name_en: "5.2、回调相关",
+                content: [
+                    {
+                        name: "5.2.1、示例1",
+                        name_en: "5.2.1、示例1",
+                        thumbnail: "5.2.1、示例1.png",
+                        fileName: "5.2.1、示例1"
+                    },
+                ]
+            },
         }
     },
 };
