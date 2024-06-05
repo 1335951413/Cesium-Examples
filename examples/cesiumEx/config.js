@@ -317,6 +317,18 @@ var exampleConfig = {
                         thumbnail: "2.3.14、道路.png",
                         fileName: "2.3.14、道路"
                     },
+                    {
+                        name: "2.3.15、canvas",
+                        name_en: "2.3.15、canvas",
+                        thumbnail: "2.3.15、canvas.png",
+                        fileName: "2.3.15、canvas"
+                    },
+                    {
+                        name: "2.3.16、gif",
+                        name_en: "2.3.16、gif",
+                        thumbnail: "2.3.16、gif.png",
+                        fileName: "2.3.16、gif"
+                    },
                 ]
             },
             "map4": {
