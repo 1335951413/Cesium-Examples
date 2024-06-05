@@ -461,6 +461,12 @@ var exampleConfig = {
                         thumbnail: "4.1.9、剖面分析.png",
                         fileName: "4.1.9、剖面分析"
                     },
+                    {
+                        name: "4.1.10、水域面",
+                        name_en: "4.1.10、水域面",
+                        thumbnail: "4.1.10、水域面.png",
+                        fileName: "4.1.10、水域面"
+                    },
 
                 ]
             },
