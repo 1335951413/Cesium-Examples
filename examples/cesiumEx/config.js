@@ -203,6 +203,12 @@ var exampleConfig = {
                     thumbnail: "1.12、加载mvt.png",
                     fileName: "1.12、加载mvt"
                 },
+                {
+                    name: "2.1.12、高德、百度等并纠偏",
+                    name_en: "2.1.12、高德、百度等并纠偏",
+                    thumbnail: "2.1.12、高德、百度等并纠偏.png",
+                    fileName: "2.1.12、高德、百度等并纠偏"
+                },
                 ]
             },
             "map2": {
