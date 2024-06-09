@@ -413,6 +413,12 @@ var exampleConfig = {
                         thumbnail: "3.1.5、customShader自定义材质2.png",
                         fileName: "3.1.5、customShader自定义材质2"
                     },
+                    {
+                        name: "3.1.6、点击获取属性",
+                        name_en: "3.1.6、点击获取属性",
+                        thumbnail: "3.1.6、点击获取属性.png",
+                        fileName: "3.1.6、点击获取属性"
+                    },
                 ]
             },
         }
@@ -485,7 +491,12 @@ var exampleConfig = {
                         thumbnail: "4.1.10、水域面.png",
                         fileName: "4.1.10、水域面"
                     },
-
+                    {
+                        name: "4.1.11、单体化",
+                        name_en: "4.1.11、单体化",
+                        thumbnail: "4.1.11、单体化.png",
+                        fileName: "4.1.11、单体化"
+                    },
                 ]
             },
             "map6": {
@@ -564,6 +575,24 @@ var exampleConfig = {
                         name_en: "5.2.1、示例1",
                         thumbnail: "5.2.1、示例1.png",
                         fileName: "5.2.1、示例1"
+                    },
+                ]
+            },
+            "map7": {
+                name: "5.3、特殊形状",
+                name_en: "5.3、特殊形状",
+                content: [
+                    {
+                        name: "5.3.1、视锥体",
+                        name_en: "5.3.1、视锥体",
+                        thumbnail: "5.3.1、视锥体.png",
+                        fileName: "5.3.1、视锥体"
+                    },
+                    {
+                        name: "5.3.2、手动视锥体",
+                        name_en: "5.3.2、手动视锥体",
+                        thumbnail: "5.3.2、手动视锥体.png",
+                        fileName: "5.3.2、手动视锥体"
                     },
                 ]
             },
