@@ -43,7 +43,7 @@
 
         // 视锥体朝向
         let heading = 0;
-        let pitch = -Math.PI / 4;
+        let pitch = 0;
         let roll = 0;
         let hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
         let orientation = Cesium.Quaternion.fromHeadingPitchRoll(hpr);
@@ -52,13 +52,17 @@
         // 视场角：度
         const fov = 60;
         // 近截面的距离
-        const near = 100;
+        const near = 10;
         // 远截面的距离
         const far = 500;
         // 平面的宽高比
         const aspectRatio = 0.4;
 
-        addFrustum(origin, orientation, fov, near, far, aspectRatio);
+        for (let i = 0; i < 10; i = i + 2) {
+            roll = (Math.PI / 6) * i
+            let orientation = Cesium.Quaternion.fromHeadingPitchRoll(new Cesium.HeadingPitchRoll(heading, pitch, roll));
+            addFrustum(origin, orientation, fov, near, far, aspectRatio);
+        }
 
         // 创建视锥体及轮廓线
         function addFrustum(position, orientation, fov, near, far, aspectRatio) {
