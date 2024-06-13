@@ -29,46 +29,34 @@
         viewer.scene.debugShowFramesPerSecond = true;
         viewer.scene.globe.depthTestAgainstTerrain = true;
 
-        // FrustumOutlineGeometry
-        // https://www.pipipi.net/35748.html
-        // 视锥体position
-
         // 地图视野定位
         viewer.camera.setView({
-            destination: Cesium.Cartesian3.fromDegrees(120, 30, 2000),
+            destination: Cesium.Cartesian3.fromDegrees(120, 30, 3000),
         });
 
         // 视锥体位置
-        let origin = Cesium.Cartesian3.fromDegrees(120, 30, 100);
+        let qd = Cesium.Cartesian3.fromDegrees(120, 30, 1000);
+        let zd = Cesium.Cartesian3.fromDegrees(125, 30, 0);
 
-        // 视锥体朝向
-        let heading = 0;
-        let pitch = 0;
-        let roll = 0;
-        let hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-        let orientation = Cesium.Quaternion.fromHeadingPitchRoll(hpr);
+        const fov = 30;  //上下角度
+        const near = 10;  // 进距离
+        const far = 5000;  //远距离
+        const aspectRatio = 1.4;  //横向比例
 
-        // 视锥体本身参数
-        // 视场角：度
-        const fov = 60;
-        // 近截面的距离
-        const near = 10;
-        // 远截面的距离
-        const far = 500;
-        // 平面的宽高比
-        const aspectRatio = 0.4;
-
-        for (let i = 0; i < 10; i = i + 2) {
-            roll = (Math.PI / 6) * i
-            let orientation = Cesium.Quaternion.fromHeadingPitchRoll(new Cesium.HeadingPitchRoll(heading, pitch, roll));
-            addFrustum(origin, orientation, fov, near, far, aspectRatio);
-        }
+        // 绘制
+        addFrustum(
+            qd,
+            _getOrientation(qd, zd),
+            fov,
+            near,
+            far,
+            aspectRatio
+        );
 
         // 创建视锥体及轮廓线
         function addFrustum(position, orientation, fov, near, far, aspectRatio) {
             let frustum = new Cesium.PerspectiveFrustum({
                 // 查看的视场角，绕Z轴旋转，以弧度方式输入
-                // fov: Cesium.Math.PI_OVER_THREE,
                 fov: Cesium.Math.toRadians(fov),
                 // 视锥体的宽度/高度
                 aspectRatio: aspectRatio,
@@ -122,6 +110,33 @@
             });
             viewer.scene.primitives.add(primitive);
             viewer.scene.primitives.add(primitive1);
+        }
+
+        function _getOrientation(cameraPosition, position) {
+            var e = cameraPosition,
+                t = position,
+                i = Cesium.Cartesian3.normalize(
+                    Cesium.Cartesian3.subtract(t, e, new Cesium.Cartesian3()),
+                    new Cesium.Cartesian3()
+                ),
+                a = Cesium.Cartesian3.normalize(e, new Cesium.Cartesian3()),
+                n = new Cesium.Camera(viewer.scene);
+            (n.position = e),
+                (n.direction = i),
+                (n.up = a),
+                (i = n.directionWC),
+                (a = n.upWC);
+            var r = n.rightWC,
+                o = new Cesium.Cartesian3(),
+                l = new Cesium.Matrix3(),
+                u = new Cesium.Quaternion();
+            r = Cesium.Cartesian3.negate(r, o);
+            var d = l;
+            Cesium.Matrix3.setColumn(d, 0, r, d),
+                Cesium.Matrix3.setColumn(d, 1, a, d),
+                Cesium.Matrix3.setColumn(d, 2, i, d);
+            var c = Cesium.Quaternion.fromRotationMatrix(d, u);
+            return (this.orientation = c), c;
         }
     </script>
 </body>
