@@ -2,7 +2,8 @@
 
 <h4 align="center">在线访问 <a target="_blank" href="https://jiawanlong.github.io/">https://jiawanlong.github.io/</a> </h4>
 
-![Forks](https://img.shields.io/github/forks/jiawanlong/cesium-three-demos.svg?style=social) ![Stars](https://img.shields.io/github/stars/jiawanlong/cesium-three-demos.svg?style=social) ![Contributors](https://img.shields.io/github/contributors/jiawanlong/cesium-three-demos.svg)
+![Forks](https://img.shields.io/github/forks/jiawanlong/cesium-three-demos.svg?style=social) ![Stars](https://img.shields.io/github/stars/jiawanlong/cesium-three-demos.svg?style=social) ![Contributors](https://img.shields.io/github/contributors/jiawanlong/cesium-three-demos.svg)![Release](https://img.shields.io/github/v/release/jiawanlong/cesium-three-demos.svg)
+
 
 ### 说明
 
