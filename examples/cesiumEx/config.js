@@ -335,6 +335,12 @@ var exampleConfig = {
                         thumbnail: "2.3.16、gif.png",
                         fileName: "2.3.16、gif"
                     },
+                    {
+                        name: "2.3.17、聚合",
+                        name_en: "2.3.17、聚合",
+                        thumbnail: "2.3.17、聚合.png",
+                        fileName: "2.3.17、聚合"
+                    },
                 ]
             },
             "map4": {
@@ -537,8 +543,8 @@ var exampleConfig = {
         name_en: "5、特效",
         content: {
             "map5": {
-                name: "5.1、场景特效",
-                name_en: "5.1、场景特效",
+                name: "5.1、场景相关",
+                name_en: "5.1、场景相关",
                 content: [
                     {
                         name: "5.1.1、雨雪雾",
@@ -563,6 +569,17 @@ var exampleConfig = {
                         name_en: "5.1.4、背景图",
                         thumbnail: "5.1.4、背景图.png",
                         fileName: "5.1.4、背景图"
+                    },
+                    {
+                        name: "5.1.5、二三维切换",
+                        name_en: "5.1.5、二三维切换",
+                        thumbnail: "5.1.5、二三维切换.png",
+                        fileName: "5.1.5、二三维切换"
+                    },{
+                        name: "5.1.6、场景出图",
+                        name_en: "5.1.6、场景出图",
+                        thumbnail: "5.1.6、场景出图.png",
+                        fileName: "5.1.6、场景出图"
                     },
                 ]
             },
@@ -593,6 +610,30 @@ var exampleConfig = {
                         name_en: "5.3.2、手动视锥体",
                         thumbnail: "5.3.2、手动视锥体.png",
                         fileName: "5.3.2、手动视锥体"
+                    },
+                    {
+                        name: "5.3.3、移动的视锥体",
+                        name_en: "5.3.3、移动的视锥体",
+                        thumbnail: "5.3.3、移动的视锥体.png",
+                        fileName: "5.3.3、移动的视锥体"
+                    },
+                    {
+                        name: "5.3.4、圆锥体",
+                        name_en: "5.3.4、圆锥体",
+                        thumbnail: "5.3.4、圆锥体.png",
+                        fileName: "5.3.4、圆锥体"
+                    },
+                    {
+                        name: "5.3.5、立体墙",
+                        name_en: "5.3.5、立体墙",
+                        thumbnail: "5.3.5、立体墙.png",
+                        fileName: "5.3.5、立体墙"
+                    },
+                    {
+                        name: "5.3.6、曲线插值",
+                        name_en: "5.3.6、曲线插值",
+                        thumbnail: "5.3.6、曲线插值.png",
+                        fileName: "5.3.6、曲线插值"
                     },
                 ]
             },
