@@ -575,7 +575,7 @@ var exampleConfig = {
                         name_en: "5.1.5、二三维切换",
                         thumbnail: "5.1.5、二三维切换.png",
                         fileName: "5.1.5、二三维切换"
-                    },{
+                    }, {
                         name: "5.1.6、场景出图",
                         name_en: "5.1.6、场景出图",
                         thumbnail: "5.1.6、场景出图.png",
@@ -588,11 +588,12 @@ var exampleConfig = {
                 name_en: "5.2、回调相关",
                 content: [
                     {
-                        name: "5.2.1、示例1",
-                        name_en: "5.2.1、示例1",
-                        thumbnail: "5.2.1、示例1.png",
-                        fileName: "5.2.1、示例1"
+                        name: "5.2.1、类似回调",
+                        name_en: "5.2.1、类似回调",
+                        thumbnail: "5.2.1、类似回调.png",
+                        fileName: "5.2.1、类似回调"
                     },
+                    
                 ]
             },
             "map7": {
@@ -634,6 +635,12 @@ var exampleConfig = {
                         name_en: "5.3.6、曲线插值",
                         thumbnail: "5.3.6、曲线插值.png",
                         fileName: "5.3.6、曲线插值"
+                    },
+                    {
+                        name: "5.3.7、圆锥体",
+                        name_en: "5.3.7、圆锥体",
+                        thumbnail: "5.3.7、圆锥体.png",
+                        fileName: "5.3.7、圆锥体"
                     },
                 ]
             },
