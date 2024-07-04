@@ -559,6 +559,12 @@ var exampleConfig = {
                         fileName: "5.1.1、雨雪雾Webgl2"
                     },
                     {
+                        name: "5.1.1、雾Webgl2",
+                        name_en: "5.1.1、雾Webgl2",
+                        thumbnail: "5.1.1、雾Webgl2.png",
+                        fileName: "5.1.1、雾Webgl2"
+                    },
+                    {
                         name: "5.1.2、天空盒",
                         name_en: "5.1.2、天空盒",
                         thumbnail: "5.1.2、天空盒.png",
