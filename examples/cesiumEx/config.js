@@ -137,7 +137,13 @@ var exampleConfig = {
             "map1": {
                 name: "2.1、影像",
                 name_en: "2.1、影像",
-                content: [{
+                content: [
+                    {
+                        name: "2.1.0、单张图片",
+                        name_en: "2.1.0、单张图片",
+                        thumbnail: "2.1.0、单张图片.png",
+                        fileName: "2.1.0、单张图片"
+                    },{
                     name: "2.1.1、单张图片",
                     name_en: "2.1.1、单张图片",
                     thumbnail: "2.1.1、单张图片.png",
@@ -220,6 +226,12 @@ var exampleConfig = {
                     name_en: "2.1.14、shp",
                     thumbnail: "2.1.14、shp.png",
                     fileName: "2.1.14、shp"
+                },
+                {
+                    name: "2.1.15、动态时序图",
+                    name_en: "2.1.15、动态时序图",
+                    thumbnail: "2.1.15、动态时序图.png",
+                    fileName: "2.1.15、动态时序图"
                 },
                 ]
             },
@@ -352,6 +364,12 @@ var exampleConfig = {
                         name_en: "2.3.17、聚合",
                         thumbnail: "2.3.17、聚合.png",
                         fileName: "2.3.17、聚合"
+                    },
+                    {
+                        name: "2.3.18、czml",
+                        name_en: "2.3.18、czml",
+                        thumbnail: "2.3.18、czml.png",
+                        fileName: "2.3.18、czml"
                     },
 
                 ]
