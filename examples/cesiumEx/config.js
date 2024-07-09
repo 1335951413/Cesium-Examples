@@ -341,6 +341,12 @@ var exampleConfig = {
                         thumbnail: "2.3.17、聚合.png",
                         fileName: "2.3.17、聚合"
                     },
+                    {
+                        name: "2.3.18、wkt",
+                        name_en: "2.3.18、wkt",
+                        thumbnail: "2.3.18、wkt.png",
+                        fileName: "2.3.18、wkt"
+                    },
                 ]
             },
             "map4": {
@@ -653,6 +659,48 @@ var exampleConfig = {
                         name_en: "5.3.7、圆锥体",
                         thumbnail: "5.3.7、圆锥体.png",
                         fileName: "5.3.7、圆锥体"
+                    },
+                ]
+            },
+        }
+    },
+    "control": {
+        name: "6、物理引擎",
+        name_en: "6、物理引擎",
+        content: {
+            "map111": {
+                name: "6.1、ammo",
+                name_en: "6.1、ammo",
+                content: [
+                    {
+                        name: "6.1.1、车辆运动",
+                        name_en: "6.1.1、车辆运动",
+                        thumbnail: "6.1.1、车辆运动.png",
+                        fileName: "6.1.1、车辆运动"
+                    },
+                    {
+                        name: "6.1.2、转动（旗子）",
+                        name_en: "6.1.2、转动（旗子）",
+                        thumbnail: "6.1.2、转动（旗子）.png",
+                        fileName: "6.1.2、转动（旗子）"
+                    },
+                    {
+                        name: "6.1.3、转动（球）",
+                        name_en: "6.1.3、转动（球）",
+                        thumbnail: "6.1.3、转动（球）.png",
+                        fileName: "6.1.3、转动（球）"
+                    },
+                    {
+                        name: "6.1.4、撞击（软体）",
+                        name_en: "6.1.4、撞击（软体）",
+                        thumbnail: "6.1.4、撞击（软体）.png",
+                        fileName: "6.1.4、撞击（软体）"
+                    },
+                    {
+                        name: "6.1.5、撞击断裂体",
+                        name_en: "6.1.5、撞击断裂体",
+                        thumbnail: "6.1.5、撞击断裂体.png",
+                        fileName: "6.1.5、撞击断裂体"
                     },
                 ]
             },
