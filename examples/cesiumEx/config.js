@@ -209,6 +209,18 @@ var exampleConfig = {
                     thumbnail: "2.1.12、高德、百度等并纠偏.png",
                     fileName: "2.1.12、高德、百度等并纠偏"
                 },
+                {
+                    name: "2.1.13、wkt",
+                    name_en: "2.1.13、wkt",
+                    thumbnail: "2.1.13、wkt.png",
+                    fileName: "2.1.13、wkt"
+                },
+                {
+                    name: "2.1.14、shp",
+                    name_en: "2.1.14、shp",
+                    thumbnail: "2.1.14、shp.png",
+                    fileName: "2.1.14、shp"
+                },
                 ]
             },
             "map2": {
@@ -341,12 +353,7 @@ var exampleConfig = {
                         thumbnail: "2.3.17、聚合.png",
                         fileName: "2.3.17、聚合"
                     },
-                    {
-                        name: "2.3.18、wkt",
-                        name_en: "2.3.18、wkt",
-                        thumbnail: "2.3.18、wkt.png",
-                        fileName: "2.3.18、wkt"
-                    },
+
                 ]
             },
             "map4": {
@@ -611,7 +618,7 @@ var exampleConfig = {
                         thumbnail: "5.2.1、类似回调.png",
                         fileName: "5.2.1、类似回调"
                     },
-                    
+
                 ]
             },
             "map7": {
