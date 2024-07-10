@@ -24,7 +24,7 @@
     viewer.imageryLayers.addImageryProvider(imageryProvider)
 
     // 利用py库 tle2czml，生成czml文件
-    
+
     let czmldata = new Cesium.CzmlDataSource.load('./wx.czml');
     viewer.dataSources.add(czmldata)
     viewer.clock.shouldAnimate = true;
