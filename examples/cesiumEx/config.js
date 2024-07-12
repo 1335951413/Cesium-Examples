@@ -112,6 +112,12 @@ var exampleConfig = {
                     thumbnail: "1.17、深度检测.png",
                     fileName: "1.17、深度检测"
                 },
+                {
+                    name: "1.18、echarts时间轴",
+                    name_en: "1.18、echarts时间轴",
+                    thumbnail: "1.18、echarts时间轴.png",
+                    fileName: "1.18、echarts时间轴"
+                },
                     // {
                     //     name: "相机",
                     //     name_en: "相机",

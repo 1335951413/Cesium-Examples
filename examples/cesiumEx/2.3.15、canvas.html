@@ -43,7 +43,7 @@
         const viewer = new Cesium.Viewer("map", {});
         viewer.scene.debugShowFramesPerSecond = true;
 
-        getLabel(text, fontSize = 20, fontFamily = 'YouSheBiaoTiHei-2', colorArr = [["0", "#EEEEEE"], ["1", "#99C2F5"]]) {
+        function getLabel(text, fontSize = 30, fontFamily = 'YouSheBiaoTiHei-2', colorArr = [["0", "#EEEEEE"], ["1", "#99C2F5"]]) {
             let canvas = document.createElement('canvas')
             const arr = text.split('')
             const width = fontSize * arr.length
@@ -54,18 +54,16 @@
             ctx.font = `${fontSize}px ${fontFamily}`
             let textMetrics = ctx.measureText(text)
             let text_height = textMetrics.actualBoundingBoxDescent
-            // let gradient = ctx.createLinearGradient(0, 0, 0, text_height)
-            // colorArr.forEach(item => {
-            //     gradient.addColorStop(item[0], item[1])
-            // })
-            // ctx.fillStyle = gradient
+            let gradient = ctx.createLinearGradient(0, 0, 0, text_height)
+            colorArr.forEach(item => {
+                gradient.addColorStop(item[0], item[1])
+            })
+            ctx.fillStyle = gradient
             ctx.fillText(text, 0, 0)
             let image = new Image()
             image.src = canvas.toDataURL("image/png")
             return image
         }
-
-        const url = getLabel(name)
 
         var hello = viewer.entities.add({
             name: "贴地",
@@ -79,21 +77,12 @@
                 heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
                 disableDepthTestDistance: Number.POSITIVE_INFINITY,
             },
-            label: {
-                text: "贴地",
-                font: "14pt monospace",
-                outlineWidth: 2,
-                verticalOrigin: Cesium.VerticalOrigin.TOP,
-                heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-                disableDepthTestDistance: Number.POSITIVE_INFINITY,
-                showBackground: true,
-                backgroundColor: Cesium.Color.WHITE,
-            },
             billboard: {
-                image: url,
-                scale: 0.7,
-                distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 3e7),
-                pixelOffset: new Cesium.Cartesian2(20, -20),
+                image: getLabel('name'),
+                scale: 2,
+                // distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 3e7),
+                // distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 3e7),
+                // pixelOffset: new Cesium.Cartesian2(20, -20),
             },
         });
     </script>
