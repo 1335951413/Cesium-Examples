@@ -643,6 +643,12 @@ var exampleConfig = {
                         thumbnail: "5.1.6、场景出图.png",
                         fileName: "5.1.6、场景出图"
                     },
+                    {
+                        name: "5.1.7、体积云",
+                        name_en: "5.1.7、体积云",
+                        thumbnail: "5.1.7、体积云.png",
+                        fileName: "5.1.7、体积云"
+                    },
                 ]
             },
             "map6": {
