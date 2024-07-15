@@ -118,6 +118,7 @@ var exampleConfig = {
                     thumbnail: "1.18、echarts时间轴.png",
                     fileName: "1.18、echarts时间轴"
                 },
+
                     // {
                     //     name: "相机",
                     //     name_en: "相机",
@@ -376,6 +377,18 @@ var exampleConfig = {
                         name_en: "2.3.18、czml",
                         thumbnail: "2.3.18、czml.png",
                         fileName: "2.3.18、czml"
+                    },
+                    {
+                        name: "2.3.19、字体图标",
+                        name_en: "2.3.19、字体图标",
+                        thumbnail: "2.3.19、字体图标.png",
+                        fileName: "2.3.19、字体图标"
+                    },
+                    {
+                        name: "2.3.20、字体图标缩放",
+                        name_en: "2.3.20、字体图标缩放",
+                        thumbnail: "2.3.20、字体图标缩放.png",
+                        fileName: "2.3.20、字体图标缩放"
                     },
 
                 ]
