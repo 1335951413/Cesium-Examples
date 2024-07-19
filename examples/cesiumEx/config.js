@@ -793,7 +793,7 @@ var exampleConfig = {
                         thumbnail: "7.1.1、雷达.png",
                         fileName: "7.1.1、雷达"
                     },
-                    {
+                    { 
                         name: "7.1.2、动态扩散点",
                         name_en: "7.1.2、动态扩散点",
                         thumbnail: "7.1.2、动态扩散点.png",
@@ -810,6 +810,12 @@ var exampleConfig = {
                         name_en: "7.1.4、水波纹",
                         thumbnail: "7.1.4、水波纹.png",
                         fileName: "7.1.4、水波纹"
+                    },
+                    {
+                        name: "7.1.5、流动线",
+                        name_en: "7.1.5、流动线",
+                        thumbnail: "7.1.5、流动线.png",
+                        fileName: "7.1.5、流动线"
                     },
                 ]
             },
