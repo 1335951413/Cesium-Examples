@@ -40,6 +40,7 @@
                 return true;
             }
         }
+
         Object.defineProperties(PolylineTrailLinkMaterialProperty.prototype, {
             isConstant: {
                 get: function () {
@@ -53,9 +54,11 @@
             },
             color: Cesium.createPropertyDescriptor('color')
         });
+
         PolylineTrailLinkMaterialProperty.prototype.getType = function (time) {
             return 'PolylineTrailLink';
         }
+        
         PolylineTrailLinkMaterialProperty.prototype.getValue = function (time, result) {
             if (!Cesium.defined(result)) {
                 result = {};
@@ -65,6 +68,7 @@
             result.time = (((new Date()).getTime() - this._time) % this.duration) / this.duration * this._d;
             return result;
         }
+        
         PolylineTrailLinkMaterialProperty.prototype.equals = function (other) {
             return this === other ||
                 (other instanceof PolylineTrailLinkMaterialProperty &&
@@ -74,7 +78,7 @@
         Cesium.PolylineTrailLinkMaterialProperty = PolylineTrailLinkMaterialProperty;
         Cesium.Material.PolylineTrailLinkType = 'PolylineTrailLink';
         Cesium.Material.PolylineTrailLinkImage = "./line.png";
-        
+
         Cesium.Material.PolylineTrailLinkSource = `
             czm_material czm_getMaterial(czm_materialInput materialInput)
             {
