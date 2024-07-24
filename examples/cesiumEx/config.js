@@ -735,6 +735,43 @@ var exampleConfig = {
                     },
                 ]
             },
+            "map5w21787": {
+                name: "5.4、粒子效果",
+                name_en: "5.4、粒子效果",
+                content: [
+                    {
+                        name: "5.4.1、火焰",
+                        name_en: "5.4.1、火焰",
+                        thumbnail: "5.4.1、火焰.png",
+                        fileName: "5.4.1、火焰"
+                    },
+                    {
+                        name: "5.4.2、水枪",
+                        name_en: "5.4.2、水枪",
+                        thumbnail: "5.4.2、水枪.png",
+                        fileName: "5.4.2、水枪"
+                    },
+                    {
+                        name: "5.4.3、爆炸",
+                        name_en: "5.4.3、爆炸",
+                        thumbnail: "5.4.3、爆炸.png",
+                        fileName: "5.4.3、爆炸"
+                    },
+                    {
+                        name: "5.4.4、喷雾",
+                        name_en: "5.4.4、喷雾",
+                        thumbnail: "5.4.4、喷雾.png",
+                        fileName: "5.4.4、喷雾"
+                    },
+                    {
+                        name: "5.4.5、烟",
+                        name_en: "5.4.5、烟",
+                        thumbnail: "5.4.5、烟.png",
+                        fileName: "5.4.5、烟"
+                    },
+                  
+                ]
+            },
         }
     },
     "control": {
@@ -787,6 +824,18 @@ var exampleConfig = {
                 name: "7.1、材质",
                 name_en: "7.1、材质",
                 content: [
+                    {
+                        name: "7.1.0、Primitive",
+                        name_en: "7.1.0、Primitive",
+                        thumbnail: "7.1.0、Primitive.png",
+                        fileName: "7.1.0、Primitive"
+                    },
+                    {
+                        name: "7.1.0、Entity",
+                        name_en: "7.1.0、Entity",
+                        thumbnail: "7.1.0、Entity.png",
+                        fileName: "7.1.0、Entity"
+                    },
                     {
                         name: "7.1.1、雷达",
                         name_en: "7.1.1、雷达",
