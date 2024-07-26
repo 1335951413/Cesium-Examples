@@ -3,6 +3,24 @@ var identification = {
     name: "Leaflet"
 };
 var exampleConfig = {
+    "mapping": {
+        name: "0、综合应用",
+        name_en: "0、综合应用",
+        content: {
+            "maxssp": {
+                name: "综合应用",
+                name_en: "base",
+                content: [{
+                    name: "案例1",
+                    name_en: "案例1",
+                    thumbnail: "案例1.png",
+                    fileName: "0"
+                },
+
+                ]
+            },
+        }
+    },
     "base": {
         name: "1、基础",
         name_en: "base",
