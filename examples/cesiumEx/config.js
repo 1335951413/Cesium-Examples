@@ -15,7 +15,7 @@ var exampleConfig = {
                     name_en: "智慧城市",
                     thumbnail: "案例1.png",
                     fileName: "0"
-                },{
+                }, {
                     name: "台风",
                     name_en: "台风",
                     thumbnail: "案例2.png",
