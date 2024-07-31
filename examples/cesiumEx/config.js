@@ -19,6 +19,7 @@ var exampleConfig = {
                     name: "台风",
                     name_en: "台风",
                     thumbnail: "案例2.png",
+                    
                     fileName: "1"
                 },
 
