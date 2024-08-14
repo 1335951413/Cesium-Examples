@@ -1224,7 +1224,6 @@
         tileset = new Cesium.Cesium3DTileset({
           url: "./data/tileset.json",
         });
-
         tileset.readyPromise
           .then(function (tileset) {
             viewer.scene.primitives.add(tileset);
