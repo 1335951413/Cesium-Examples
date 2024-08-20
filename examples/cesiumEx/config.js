@@ -15,12 +15,21 @@ var exampleConfig = {
                     name_en: "智慧城市",
                     thumbnail: "案例1.png",
                     fileName: "0"
-                }, {
-                    name: "台风",
-                    name_en: "台风",
-                    thumbnail: "案例2.png",
+                },
+                //  {
+                //     name: "台风",
+                //     name_en: "台风",
+                //     thumbnail: "案例2.png",
                     
-                    fileName: "1"
+                //     fileName: "1"
+                // },
+
+                {
+                    name: "下雨+闪电+洪水",
+                    name_en: "下雨+闪电+洪水",
+                    thumbnail: "2.png",
+                    
+                    fileName: "2"
                 },
 
                 ]
@@ -677,6 +686,12 @@ var exampleConfig = {
                         name_en: "5.1.7、体积云",
                         thumbnail: "5.1.7、体积云.png",
                         fileName: "5.1.7、体积云"
+                    },
+                    {
+                        name: "5.1.8、闪电",
+                        name_en: "5.1.8、闪电",
+                        thumbnail: "5.1.8、闪电.png",
+                        fileName: "5.1.8、闪电"
                     },
                 ]
             },
