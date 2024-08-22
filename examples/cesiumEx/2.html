@@ -26,19 +26,19 @@
     viewer.scene.debugShowFramesPerSecond = true;
     // 加载默认地形
     viewer.terrainProvider = new Cesium.CesiumTerrainProvider({
-            url: 'http://data.mars3d.cn/terrain'
-        });
+      url: 'http://data.mars3d.cn/terrain'
+    });
     // 深度监测
     viewer.scene.globe.depthTestAgainstTerrain = true;
     viewer.camera.setView({
-            destination: Cesium.Cartesian3.fromDegrees(121.662323, 20.157338, 271712),
-            easingFunction: Cesium.EasingFunction.LINEAR_NONE,
-            orientation: {
-                heading: Cesium.Math.toRadians(350.3),
-                pitch: Cesium.Math.toRadians(-27.4),
-                roll: 0.0
-            },
-        });
+      destination: Cesium.Cartesian3.fromDegrees(121.662323, 20.157338, 271712),
+      easingFunction: Cesium.EasingFunction.LINEAR_NONE,
+      orientation: {
+        heading: Cesium.Math.toRadians(350.3),
+        pitch: Cesium.Math.toRadians(-27.4),
+        roll: 0.0
+      },
+    });
     setTimeout(() => {
       viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(98.865691, 28.358436, 16210.4),
