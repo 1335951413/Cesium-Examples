@@ -23,13 +23,14 @@ var exampleConfig = {
                         thumbnail: "案例1.png",
                         fileName: "0"
                     },
-                    
+
                     //  {
                     //     name: "台风",
                     //     name_en: "台风",
                     //     thumbnail: "案例2.png",
                     //     fileName: "1"
                     // },
+                    
                     {
                         name: "下雨+闪电+洪水",
                         name_en: "下雨+闪电+洪水",
