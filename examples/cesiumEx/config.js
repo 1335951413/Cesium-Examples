@@ -36,6 +36,7 @@ var exampleConfig = {
                         thumbnail: "2.png",
                         fileName: "2"
                     },
+                    
 
                 ]
             },
