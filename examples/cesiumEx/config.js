@@ -158,13 +158,14 @@ var exampleConfig = {
                     thumbnail: "1.18、echarts时间轴.png",
                     fileName: "1.18、echarts时间轴"
                 },
+                
                 {
                     name: "1.19、任意坐标转换",
                     name_en: "1.19、任意坐标转换",
                     thumbnail: "1.19、任意坐标转换.png",
                     fileName: "1.19、任意坐标转换"
                 },
-                
+
                     // {
                     //     name: "相机",
                     //     name_en: "相机",
