@@ -134,7 +134,7 @@ var exampleConfig = {
                     thumbnail: "1.14、倾斜摄影单体.png",
                     fileName: "1.14、倾斜摄影单体"
                 },
-                {
+                { 
                     name: "1.15、罗盘、导航条",
                     name_en: "1.15、罗盘、导航条",
                     thumbnail: "1.15、罗盘、导航条.png",
@@ -158,7 +158,7 @@ var exampleConfig = {
                     thumbnail: "1.18、echarts时间轴.png",
                     fileName: "1.18、echarts时间轴"
                 },
-                
+
                 {
                     name: "1.19、任意坐标转换",
                     name_en: "1.19、任意坐标转换",
