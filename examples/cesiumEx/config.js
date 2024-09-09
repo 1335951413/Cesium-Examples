@@ -68,7 +68,6 @@ var exampleConfig = {
                     thumbnail: "1.3、坐标、坐标转换.png",
                     fileName: "1.3、坐标、坐标转换"
                 },
-                
                 {
                     name: "1.4、屏幕、场景、地表坐标",
                     name_en: "1.4、屏幕、场景、地表坐标",
