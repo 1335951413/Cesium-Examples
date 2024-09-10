@@ -166,18 +166,18 @@ var exampleConfig = {
                     fileName: "1.19、任意坐标转换"
                 },
 
-                    // {
-                    //     name: "相机",
-                    //     name_en: "相机",
-                    //     thumbnail: "1.5、相机.png",
-                    //     fileName: "1.5、相机"
-                    // },
-                    // {
-                    //     name: "事件",
-                    //     name_en: "事件",
-                    //     thumbnail: "1.6、事件",
-                    //     fileName: "1.6、事件"
-                    // }
+                // {
+                //     name: "相机",
+                //     name_en: "相机",
+                //     thumbnail: "1.5、相机.png",
+                //     fileName: "1.5、相机"
+                // },
+                // {
+                //     name: "事件",
+                //     name_en: "事件",
+                //     thumbnail: "1.6、事件",
+                //     fileName: "1.6、事件"
+                // }
 
 
                 ]
