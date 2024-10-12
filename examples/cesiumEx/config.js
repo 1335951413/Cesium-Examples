@@ -38,7 +38,6 @@ var exampleConfig = {
                         fileName: "2"
                     },
 
-
                 ]
             },
         }
