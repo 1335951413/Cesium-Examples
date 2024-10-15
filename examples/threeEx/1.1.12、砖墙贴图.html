@@ -55,7 +55,7 @@
 
 
         // 光源
-        const directionalLight = new THREE.AmbientLight();
+        const directionalLight = new THREE.AmbientLight(0xffffff, 4);
         scene.add(directionalLight);
         // 相机
         const camera = new THREE.PerspectiveCamera();

@@ -109,6 +109,24 @@ var exampleConfig = {
                         thumbnail: "1.1.13、UV动画.jpg",
                         fileName: "1.1.13、UV动画"
                     },
+                    {
+                        name: "1.1.14、加载模型",
+                        name_en: "1.1.14、加载模型",
+                        thumbnail: "1.1.14、加载模型.jpg",
+                        fileName: "1.1.14、加载模型"
+                    },
+                    {
+                        name: "1.1.15、gltf纹理",
+                        name_en: "1.1.15、gltf纹理",
+                        thumbnail: "1.1.15、gltf纹理.jpg",
+                        fileName: "1.1.15、gltf纹理"
+                    },
+                    {
+                        name: "1.1.16、PBR材质",
+                        name_en: "1.1.16、PBR材质",
+                        thumbnail: "1.1.16、PBR材质.jpg",
+                        fileName: "1.1.16、PBR材质"
+                    },
                 ]
             },
         }
