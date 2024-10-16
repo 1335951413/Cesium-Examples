@@ -127,6 +127,24 @@ var exampleConfig = {
                         thumbnail: "1.1.16、PBR材质.jpg",
                         fileName: "1.1.16、PBR材质"
                     },
+                    {
+                        name: "1.1.17、轮廓光",
+                        name_en: "1.1.17、轮廓光",
+                        thumbnail: "1.1.17、轮廓光.jpg",
+                        fileName: "1.1.17、轮廓光"
+                    },
+                    {
+                        name: "1.1.18、线框",
+                        name_en: "1.1.18、线框",
+                        thumbnail: "1.1.18、线框.jpg",
+                        fileName: "1.1.18、线框"
+                    },
+                    {
+                        name: "1.1.19、文字云图",
+                        name_en: "1.1.19、文字云图",
+                        thumbnail: "1.1.19、文字云图.jpg",
+                        fileName: "1.1.19、文字云图"
+                    },
                 ]
             },
         }

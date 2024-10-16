@@ -1,5 +1,5 @@
 <!--********************************************************************
-* by jiawanlong
+* by 优雅永不过时 https://github.com/z2586300277
 *********************************************************************-->
 <!DOCTYPE html>
 <html>
@@ -67,22 +67,21 @@
         })
 
         // 加载模型 fbx
-        new FBXLoader().load('./city.FBX', (object3d) => {
+        new FBXLoader().load('./tom/tom.FBX', (object3d) => {
             scene.add(object3d)
-            object3d.scale.set(0.0005, 0.0005, 0.0005)
+            object3d.scale.set(0.005, 0.005, 0.005)
         })
 
         // 加载模型 obj/ mtl
         const objLoader = new OBJLoader()
         const mtlLoader = new MTLLoader()
-        mtlLoader.load('https://file.threehub.cn/files/model/house/house.mtl', (mtl) => {
-            // mtlLoader.load('./obj/24.mtl', (mtl) => {
+        mtlLoader.load('./woman1/091_W_Aya_10K.mtl', (mtl) => {
             mtl.preload()
             objLoader.setMaterials(mtl)
-            objLoader.load('https://file.threehub.cn/files/model/house/house.obj', (obj) => {
-                // objLoader.load('./obj/24.obj', (obj) => {
+            objLoader.load('./woman1/091_W_Aya_10K.obj', (obj) => {
                 scene.add(obj)
-                obj.position.x += 3
+                 obj.scale.set(0.002, 0.002, 0.002)
+                obj.position.x += 2
             })
         })
 
