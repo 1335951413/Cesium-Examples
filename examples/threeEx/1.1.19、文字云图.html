@@ -63,8 +63,9 @@
             camera.updateProjectionMatrix()
         }
 
-        const citys = await fetch('https://z2586300277.github.io/three-editor/dist/files/other/city.json').then(res => res.json()) // 获取城市数据
-
+        const citys = await fetch('./city.json').then(res => res.json()) // 获取城市数据
+        
+        
         const updateCanvasText = createCanvasText({ dpr: 1.4 }) // 创建canvas
 
         const getColor = () => '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0') // 随机颜色
@@ -97,18 +98,6 @@
             const ctx = canvas.getContext('2d')
             ctx.imageSmoothingQuality = 'high'
             ctx.scale(devicePixelRatio, devicePixelRatio)
-            // 创建边框
-            function createBorder() {
-                ctx.strokeStyle = '#fff'
-                // 创建宽度为10px的边框
-                ctx.lineWidth = 1 * devicePixelRatio;
-                ctx.strokeRect(
-                    ctx.lineWidth / 2,
-                    ctx.lineWidth / 2,
-                    canvas.width / devicePixelRatio - ctx.lineWidth,
-                    canvas.height / devicePixelRatio - ctx.lineWidth
-                )
-            }
 
             // 创建文字
             const createText = ({ text, color, fontSize, fontFamily }) => {
@@ -136,7 +125,6 @@
 
             return (parameters) => {
                 ctx.clearRect(0, 0, canvas.width, canvas.height)  // 清空  canvas 文字 
-                if (border) createBorder() // 创建边框
                 createText(parameters) // 创建文字
                 return canvas
             }
