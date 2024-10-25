@@ -445,6 +445,12 @@ var exampleConfig = {
                         thumbnail: "2.3.21、各种entity.jpg",
                         fileName: "2.3.21、各种entity"
                     },
+                    {
+                        name: "2.3.22、切换2维bug",
+                        name_en: "2.3.22、切换2维bug",
+                        thumbnail: "2.3.22、切换2维bug.jpg",
+                        fileName: "2.3.22、切换2维bug"
+                    },
                 ]
             },
             "mapfdff4": {

@@ -145,6 +145,12 @@ var exampleConfig = {
                         thumbnail: "1.1.19、文字云图.jpg",
                         fileName: "1.1.19、文字云图"
                     },
+                    {
+                        name: "1.1.20、html标签",
+                        name_en: "1.1.20、html标签",
+                        thumbnail: "1.1.20、html标签.jpg",
+                        fileName: "1.1.20、html标签"
+                    },
                 ]
             },
         }
