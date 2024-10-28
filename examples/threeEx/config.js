@@ -146,10 +146,22 @@ var exampleConfig = {
                         fileName: "1.1.19、文字云图"
                     },
                     {
-                        name: "1.1.20、html标签",
-                        name_en: "1.1.20、html标签",
-                        thumbnail: "1.1.20、html标签.jpg",
-                        fileName: "1.1.20、html标签"
+                        name: "1.1.20、CSS2DRenderer",
+                        name_en: "1.1.20、CSS2DRenderer",
+                        thumbnail: "1.1.20、CSS2DRenderer.jpg",
+                        fileName: "1.1.20、CSS2DRenderer"
+                    },
+                    {
+                        name: "1.1.21、CSS3DRenderer",
+                        name_en: "1.1.21、CSS3DRenderer",
+                        thumbnail: "1.1.21、CSS3DRenderer.jpg",
+                        fileName: "1.1.21、CSS3DRenderer"
+                    },
+                    {
+                        name: "1.1.22、模型加文字",
+                        name_en: "1.1.22、模型加文字",
+                        thumbnail: "1.1.22、模型加文字.jpg",
+                        fileName: "1.1.22、模型加文字"
                     },
                 ]
             },

@@ -1,0 +1,113 @@
+<!--********************************************************************
+* by jiawanlong
+*********************************************************************-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body,
+        .box {
+            width: 100%;
+            background-color: #1f1f1f;
+            height: 100%;
+        }
+
+        .card {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            display: inline-block;
+            color: white;
+            background: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+      <!-- 渲染容器 -->
+      <div class="box" id="box"></div>
+
+      <!-- 标签 -->
+      <div class="card" id="cardId">模型标签</div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./../../three/build/three.module.js",
+                "three/addons/": "./../../three/examples/jsm/"
+            }
+        }
+    </script>
+
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+
+        const scene = new THREE.Scene()
+        let renderer = new THREE.WebGLRenderer({})
+        let cssRenderer = new CSS2DRenderer()
+
+        let box = document.getElementById("box")
+
+        // 坐标轴+灯光
+        const axes = new THREE.AxesHelper(500)
+        const directLight = new THREE.AmbientLight(0x404040, 2)
+        scene.add(axes, directLight)
+        const GridHelper = new THREE.GridHelper(500);
+        scene.add(GridHelper);
+
+        // 相机
+        const camera = new THREE.PerspectiveCamera();
+        camera.position.set(400, 400, 400);
+        camera.lookAt(0, 0, 0);
+
+        //渲染区域
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        box.appendChild(renderer.domElement)
+
+        // ----标注----
+        let compDiv = document.getElementById('cardId')
+        let compTag = new CSS2DObject(compDiv)
+        compTag.position.set(100, 100, 100);
+
+        scene.add(compTag)
+
+        //css3渲染区域
+        cssRenderer.setSize(window.innerWidth, window.innerHeight)
+        cssRenderer.domElement.style.position = 'absolute'
+        cssRenderer.domElement.style.top = 0 + 'px'
+        box.appendChild(cssRenderer.domElement)
+
+        // 球
+        const spherGeometry = new THREE.SphereGeometry(10)
+        const spherMaterial = new THREE.MeshLambertMaterial({ color: new THREE.Color('0xffffff') })
+        const circle = new THREE.Mesh(spherGeometry, spherMaterial)
+        scene.add(circle)
+
+
+        let controls = new OrbitControls(camera, cssRenderer.domElement)
+
+        // 执行渲染
+        cssRenderer.render(scene, camera)
+        renderer.render(scene, camera)
+
+        controls.addEventListener('change', function () {
+            cssRenderer.render(scene, camera)
+            renderer.render(scene, camera)
+        });
+    </script>
+
+</body>
+
+</html>
