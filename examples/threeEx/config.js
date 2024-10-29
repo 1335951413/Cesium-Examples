@@ -163,6 +163,12 @@ var exampleConfig = {
                         thumbnail: "1.1.22、模型加文字.jpg",
                         fileName: "1.1.22、模型加文字"
                     },
+                    {
+                        name: "1.1.23、模型加多个文字标签",
+                        name_en: "1.1.23、模型加多个文字标签",
+                        thumbnail: "1.1.23、模型加多个文字标签.jpg",
+                        fileName: "1.1.23、模型加多个文字标签"
+                    },
                 ]
             },
         }
