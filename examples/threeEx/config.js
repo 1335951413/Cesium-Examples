@@ -169,6 +169,24 @@ var exampleConfig = {
                         thumbnail: "1.1.23、模型加多个文字标签.jpg",
                         fileName: "1.1.23、模型加多个文字标签"
                     },
+                    {
+                        name: "1.1.24、精灵",
+                        name_en: "1.1.24、精灵",
+                        thumbnail: "1.1.24、精灵.jpg",
+                        fileName: "1.1.24、精灵"
+                    },
+                    {
+                        name: "1.1.25、射线",
+                        name_en: "1.1.25、射线",
+                        thumbnail: "1.1.25、射线.jpg",
+                        fileName: "1.1.25、射线"
+                    },
+                    {
+                        name: "1.1.26、射线获取层级模型",
+                        name_en: "1.1.26、射线获取层级模型",
+                        thumbnail: "1.1.26、射线获取层级模型.jpg",
+                        fileName: "1.1.26、射线获取层级模型"
+                    },
                 ]
             },
         }
