@@ -3,7 +3,7 @@ var identification = {
     name: "Leaflet"
 };
 var exampleConfig = {
-    
+
     "plot": {
         name: "0、开源导航",
         name_en: "0、开源导航",
@@ -22,7 +22,7 @@ var exampleConfig = {
             },
         }
     },
-    
+
     "base": {
         name: "1、入门",
         name_en: "base",
@@ -187,6 +187,30 @@ var exampleConfig = {
                         thumbnail: "1.1.26、射线获取层级模型.jpg",
                         fileName: "1.1.26、射线获取层级模型"
                     },
+                    {
+                        name: "1.1.27、下雨",
+                        name_en: "1.1.27、下雨",
+                        thumbnail: "1.1.27、下雨.jpg",
+                        fileName: "1.1.27、下雨"
+                    },
+                    {
+                        name: "1.1.28、GUI",
+                        name_en: "1.1.28、GUI",
+                        thumbnail: "1.1.28、GUI.jpg",
+                        fileName: "1.1.28、GUI"
+                    },
+                    {
+                        name: "1.1.29、GUI分组",
+                        name_en: "1.1.29、GUI分组",
+                        thumbnail: "1.1.29、GUI分组.jpg",
+                        fileName: "1.1.29、GUI分组"
+                    },
+                    {
+                        name: "1.1.30、OutlinePass",
+                        name_en: "1.1.30、OutlinePass",
+                        thumbnail: "1.1.30、OutlinePass.jpg",
+                        fileName: "1.1.30、OutlinePass"
+                    },
                 ]
             },
         }
@@ -238,7 +262,7 @@ var exampleConfig = {
                     },
                 ]
             },
-            
+
         }
     },
 };
