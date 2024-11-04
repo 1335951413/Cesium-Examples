@@ -211,6 +211,48 @@ var exampleConfig = {
                         thumbnail: "1.1.30、OutlinePass.jpg",
                         fileName: "1.1.30、OutlinePass"
                     },
+                    {
+                        name: "1.1.31、OutlinePass模型发光",
+                        name_en: "1.1.31、OutlinePass模型发光",
+                        thumbnail: "1.1.31、OutlinePass模型发光.jpg",
+                        fileName: "1.1.31、OutlinePass模型发光"
+                    },
+                    {
+                        name: "1.1.32、tweenjs动画",
+                        name_en: "1.1.32、tweenjs动画",
+                        thumbnail: "1.1.32、tweenjs动画.jpg",
+                        fileName: "1.1.32、tweenjs动画"
+                    },
+                    {
+                        name: "1.1.33、tweenjs相机动画",
+                        name_en: "1.1.33、tweenjs相机动画",
+                        thumbnail: "1.1.33、tweenjs相机动画.jpg",
+                        fileName: "1.1.33、tweenjs相机动画"
+                    },
+                    {
+                        name: "1.1.34、Mesh旋转",
+                        name_en: "1.1.34、Mesh旋转",
+                        thumbnail: "1.1.34、Mesh旋转.jpg",
+                        fileName: "1.1.34、Mesh旋转"
+                    },
+                    {
+                        name: "1.1.35、模型颜色",
+                        name_en: "1.1.35、模型颜色",
+                        thumbnail: "1.1.35、模型颜色.jpg",
+                        fileName: "1.1.35、模型颜色"
+                    },
+                    {
+                        name: "1.1.36、clone和copy",
+                        name_en: "1.1.36、clone和copy",
+                        thumbnail: "1.1.36、clone和copy.jpg",
+                        fileName: "1.1.36、clone和copy"
+                    },
+                    {
+                        name: "1.1.37、相机",
+                        name_en: "1.1.37、相机",
+                        thumbnail: "1.1.37、相机.jpg",
+                        fileName: "1.1.37、相机"
+                    },
                 ]
             },
         }

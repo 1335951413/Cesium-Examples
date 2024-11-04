@@ -87,14 +87,13 @@
         //高亮发光描边厚度
         outlinePass.edgeThickness = 4;
         //高亮描边发光强度
-        outlinePass.edgeStrength = 6;
+        outlinePass.edgeStrength = 6;             
         //模型闪烁频率控制，默认0不闪烁
         outlinePass.pulsePeriod = 20;
 
         // 色彩校正
         const outputPass = new OutputPass();
         composer.addPass(outputPass);
-
 
         // 点击事件
         const raycaster = new THREE.Raycaster()

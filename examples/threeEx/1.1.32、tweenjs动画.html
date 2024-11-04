@@ -31,6 +31,7 @@
             }
         }
     </script>
+    <script src="./tween.umd.js"></script>
 
 
     <script type="module">
@@ -41,59 +42,46 @@
 
         const box = document.getElementById('box')
         const scene = new THREE.Scene()
-        // 相机
-        const camera = new THREE.PerspectiveCamera(75, box.clientWidth / box.clientHeight, 0.1, 1000)
-        camera.position.set(5, 5, 5)
-        // 渲染器
+
+        const camera = new THREE.PerspectiveCamera();  //相机
+        camera.position.set(50, 20, 100); //相机位置
+        camera.lookAt(150, 0, 10); //相机位置
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true })
-        // 环境光
         scene.add(new THREE.AmbientLight(0xffffff, 4))
-        // 参考线
         scene.add(new THREE.AxesHelper(1000))
+
+        // 加载模型 gltf/ glb 
+        const loader = new GLTFLoader()
+        loader.load('./zhanji.glb', (gltf) => {
+            scene.add(gltf.scene)
+            gltf.scene.scale.set(0.005, 0.005, 0.005)
+
+            //绕x轴旋转π/4
+            gltf.scene.rotateY(Math.PI / 4);
+
+            //创建一段平移的动画
+            const tween = new TWEEN.Tween(gltf.scene.position);
+            tween.to({ x: 100, y: 50, z: 100 }, 10000);
+
+            //创建一段缩放的动画
+            const tween2 = new TWEEN.Tween(gltf.scene.scale);
+            tween2.to({ x: 0.01, y: 0.01, z: 0.01 }, 10000);
+
+            tween.start();
+            tween2.start();
+
+
+        })
+
+
 
         renderer.setSize(box.clientWidth, box.clientHeight)
         box.appendChild(renderer.domElement)
         new OrbitControls(camera, renderer.domElement)
 
-        // 加载模型 gltf/ glb 
-        const loader = new GLTFLoader()
-        loader.load('./zhanji.glb', (gltf) => {
-
-            scene.add(gltf.scene)
-            gltf.scene.scale.set(0.005, 0.005, 0.005)
-
-
-            // 递归遍历所有模型节点
-            gltf.scene.traverse(function (obj) {
-                if (obj.isMesh) {
-                    console.log('模型节点', obj);
-                    console.log('模型节点名字', obj.name);
-                    console.log('模型材质', obj.material);
-                }
-            });
-
-
-            window.addEventListener('mousedown', onDocumentClick, false);
-            function onDocumentClick(event) {
-                event.preventDefault();
-                const mouse = new THREE.Vector2();
-                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-                const raycaster = new THREE.Raycaster();
-                raycaster.setFromCamera(mouse, camera);
-                const intersects = raycaster.intersectObjects([gltf.scene]);
-                if (intersects.length > 0) {
-                    console.log(intersects)
-                    intersects[0].object.material.color.set(0xff00ff);
-                }
-
-            }
-
-        })
-
-
         animate()
         function animate() {
+            TWEEN.update();
             requestAnimationFrame(animate)
             renderer.render(scene, camera)
         }
