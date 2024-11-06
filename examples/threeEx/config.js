@@ -253,6 +253,36 @@ var exampleConfig = {
                         thumbnail: "1.1.37、相机.jpg",
                         fileName: "1.1.37、相机"
                     },
+                    {
+                        name: "1.1.38、尺寸变化",
+                        name_en: "1.1.38、尺寸变化",
+                        thumbnail: "1.1.38、尺寸变化.jpg",
+                        fileName: "1.1.38、尺寸变化"
+                    },
+                    {
+                        name: "1.1.39、包围盒",
+                        name_en: "1.1.39、包围盒",
+                        thumbnail: "1.1.39、包围盒.jpg",
+                        fileName: "1.1.39、包围盒"
+                    },
+                    {
+                        name: "1.1.40、模型包围盒",
+                        name_en: "1.1.40、模型包围盒",
+                        thumbnail: "1.1.40、模型包围盒.jpg",
+                        fileName: "1.1.40、模型包围盒"
+                    },
+                    {
+                        name: "1.1.41、相机朝向",
+                        name_en: "1.1.41、相机朝向",
+                        thumbnail: "1.1.41、相机朝向.jpg",
+                        fileName: "1.1.41、相机朝向"
+                    },
+                    {
+                        name: "1.1.42、平行光阴影",
+                        name_en: "1.1.42、平行光阴影",
+                        thumbnail: "1.1.42、平行光阴影.jpg",
+                        fileName: "1.1.42、平行光阴影"
+                    },
                 ]
             },
         }
