@@ -283,6 +283,12 @@ var exampleConfig = {
                         thumbnail: "1.1.42、平行光阴影.jpg",
                         fileName: "1.1.42、平行光阴影"
                     },
+                    {
+                        name: "1.1.43、模型运动阴影",
+                        name_en: "1.1.43、模型运动阴影",
+                        thumbnail: "1.1.43、模型运动阴影.jpg",
+                        fileName: "1.1.43、模型运动阴影"
+                    },
                 ]
             },
         }
