@@ -5,16 +5,16 @@ var identification = {
 var exampleConfig = {
 
     "plot": {
-        name: "0、开源导航",
-        name_en: "0、开源导航",
+        name: "开源导航",
+        name_en: "开源导航",
         content: {
             "m3233ap": {
                 name: "友情推荐",
                 name_en: "友情推荐",
                 content: [
                     {
-                        name: "1、优雅永不过时",
-                        name_en: "1、优雅永不过时",
+                        name: "优雅永不过时",
+                        name_en: "优雅永不过时",
                         thumbnail: "1、优雅永不过时.jpg",
                         fileName: "1、优雅永不过时"
                     },
@@ -87,8 +87,8 @@ var exampleConfig = {
                     },
 
                     {
-                        name: "1.1.34、Mesh旋转",
-                        name_en: "1.1.34、Mesh旋转",
+                        name: "1.1.13、Mesh旋转",
+                        name_en: "1.1.13、Mesh旋转",
                         thumbnail: "1.1.34、Mesh旋转.jpg",
                         fileName: "1.1.34、Mesh旋转"
                     },
@@ -118,27 +118,27 @@ var exampleConfig = {
     },
 
     "OGC": {
-        name: "模型",
-        name_en: "模型",
+        name: "2、模型",
+        name_en: "2、模型",
         content: {
             "ma7603p": {
-                name: "模型",
-                name_en: "模型",
+                name: "2.1、模型",
+                name_en: "2.1、模型",
                 content: [
                     {
-                        name: "1.1.14、加载模型",
-                        name_en: "1.1.14、加载模型",
+                        name: "2.1.1、加载模型",
+                        name_en: "2.1.14、加载模型",
                         thumbnail: "1.1.14、加载模型.jpg",
                         fileName: "1.1.14、加载模型"
                     },
                     {
-                        name: "1.1.15、gltf纹理",
+                        name: "2.1.2、gltf纹理",
                         name_en: "1.1.15、gltf纹理",
                         thumbnail: "1.1.15、gltf纹理.jpg",
                         fileName: "1.1.15、gltf纹理"
                     },
                     {
-                        name: "1.1.16、PBR材质",
+                        name: "2.1.3、PBR材质",
                         name_en: "1.1.16、PBR材质",
                         thumbnail: "1.1.16、PBR材质.jpg",
                         fileName: "1.1.16、PBR材质"
@@ -150,27 +150,27 @@ var exampleConfig = {
         }
     },
     "clientSpatialAnalyst": {
-        name: "相机和光线",
+        name: "3、相机和光线",
         name_en: "相机和光线",
         content: {
             "ma3243p": {
-                name: "相机",
+                name: "3.1、相机",
                 name_en: "相机",
                 content: [
                     {
-                        name: "1.1.4、相机控件",
+                        name: "3.1.1、相机控件",
                         name_en: "1.1.4、相机控件",
                         thumbnail: "1.1.4、相机控件.jpg",
                         fileName: "1.1.4、相机控件"
                     },
                     {
-                        name: "1.1.37、相机",
+                        name: "3.1.2、相机",
                         name_en: "1.1.37、相机",
                         thumbnail: "1.1.37、相机.jpg",
                         fileName: "1.1.37、相机"
                     },
                     {
-                        name: "1.1.41、相机朝向",
+                        name: "3.1.3、相机朝向",
                         name_en: "1.1.41、相机朝向",
                         thumbnail: "1.1.41、相机朝向.jpg",
                         fileName: "1.1.41、相机朝向"
@@ -178,29 +178,29 @@ var exampleConfig = {
                 ]
             },
             "ma22889p": {
-                name: "光线",
+                name: "3.2、光线",
                 name_en: "光线",
                 content: [
                     {
-                        name: "1.1.3、光线",
+                        name: "3.2.1、光线",
                         name_en: "1.1.3、光线",
                         thumbnail: "1.1.3、光线.jpg",
                         fileName: "1.1.3、光线"
                     },
                     {
-                        name: "1.1.17、轮廓光",
+                        name: "3.2.2、轮廓光",
                         name_en: "1.1.17、轮廓光",
                         thumbnail: "1.1.17、轮廓光.jpg",
                         fileName: "1.1.17、轮廓光"
                     },
                     {
-                        name: "1.1.42、平行光阴影",
+                        name: "3.2.3、平行光阴影",
                         name_en: "1.1.42、平行光阴影",
                         thumbnail: "1.1.42、平行光阴影.jpg",
                         fileName: "1.1.42、平行光阴影"
                     },
                     {
-                        name: "1.1.43、模型运动阴影",
+                        name: "3.2.4、模型运动阴影",
                         name_en: "1.1.43、模型运动阴影",
                         thumbnail: "1.1.43、模型运动阴影.jpg",
                         fileName: "1.1.43、模型运动阴影"
@@ -211,39 +211,39 @@ var exampleConfig = {
         }
     },
     "components": {
-        name: "文字",
+        name: "4、文字",
         name_en: "文字",
         content: {
             "6565map": {
-                name: "文字",
+                name: "4.1、文字",
                 name_en: "文字",
                 content: [
                     {
-                        name: "1.1.19、文字云图",
+                        name: "4.1.1、文字云图",
                         name_en: "1.1.19、文字云图",
                         thumbnail: "1.1.19、文字云图.jpg",
                         fileName: "1.1.19、文字云图"
                     },
                     {
-                        name: "1.1.20、CSS2DRenderer",
+                        name: "4.1.2、CSS2DRenderer",
                         name_en: "1.1.20、CSS2DRenderer",
                         thumbnail: "1.1.20、CSS2DRenderer.jpg",
                         fileName: "1.1.20、CSS2DRenderer"
                     },
                     {
-                        name: "1.1.21、CSS3DRenderer",
+                        name: "4.1.3、CSS3DRenderer",
                         name_en: "1.1.21、CSS3DRenderer",
                         thumbnail: "1.1.21、CSS3DRenderer.jpg",
                         fileName: "1.1.21、CSS3DRenderer"
                     },
                     {
-                        name: "1.1.22、模型加文字",
+                        name: "4.1.4、模型加文字",
                         name_en: "1.1.22、模型加文字",
                         thumbnail: "1.1.22、模型加文字.jpg",
                         fileName: "1.1.22、模型加文字"
                     },
                     {
-                        name: "1.1.23、模型加多个文字标签",
+                        name: "4.1.5、模型加多个文字标签",
                         name_en: "1.1.23、模型加多个文字标签",
                         thumbnail: "1.1.23、模型加多个文字标签.jpg",
                         fileName: "1.1.23、模型加多个文字标签"
@@ -255,33 +255,33 @@ var exampleConfig = {
         }
     },
     "control": {
-        name: "动画",
+        name: "5、动画",
         name_en: "动画",
         content: {
             "ma7676p": {
-                name: "动画",
+                name: "5.1、动画",
                 name_en: "动画",
                 content: [
                     {
-                        name: "1.1.5、动画",
+                        name: "5.1.1、动画",
                         name_en: "1.1.5、动画",
                         thumbnail: "1.1.5、动画.jpg",
                         fileName: "1.1.5、动画"
                     },
                     {
-                        name: "1.1.13、UV动画",
+                        name: "5.1.2、UV动画",
                         name_en: "1.1.13、UV动画",
                         thumbnail: "1.1.13、UV动画.jpg",
                         fileName: "1.1.13、UV动画"
                     },
                     {
-                        name: "1.1.32、tweenjs动画",
+                        name: "5.1.3、tweenjs动画",
                         name_en: "1.1.32、tweenjs动画",
                         thumbnail: "1.1.32、tweenjs动画.jpg",
                         fileName: "1.1.32、tweenjs动画"
                     },
                     {
-                        name: "1.1.33、tweenjs相机动画",
+                        name: "5.1.4、tweenjs相机动画",
                         name_en: "1.1.33、tweenjs相机动画",
                         thumbnail: "1.1.33、tweenjs相机动画.jpg",
                         fileName: "1.1.33、tweenjs相机动画"
@@ -293,21 +293,21 @@ var exampleConfig = {
         }
     },
     "dynamicPlot": {
-        name: "包围盒",
+        name: "6、包围盒",
         name_en: "包围盒",
         content: {
             "ma3225465p": {
-                name: "包围盒",
+                name: "6.1、包围盒",
                 name_en: "包围盒",
                 content: [
                     {
-                        name: "1.1.39、包围盒",
+                        name: "6.1.1、包围盒",
                         name_en: "1.1.39、包围盒",
                         thumbnail: "1.1.39、包围盒.jpg",
                         fileName: "1.1.39、包围盒"
                     },
                     {
-                        name: "1.1.40、模型包围盒",
+                        name: "6.1.2、模型包围盒",
                         name_en: "1.1.40、模型包围盒",
                         thumbnail: "1.1.40、模型包围盒.jpg",
                         fileName: "1.1.40、模型包围盒"
@@ -319,33 +319,33 @@ var exampleConfig = {
         }
     },
     "Elasticsearch": {
-        name: "事件",
-        name_en: "事件",
+        name: "7、事件",
+        name_en: "7、事件",
         content: {
             "ma3233p": {
-                name: "事件",
+                name: "7.1、事件",
                 name_en: "事件",
                 content: [
                     {
-                        name: "1.1.25、射线",
+                        name: "7.1.1、射线",
                         name_en: "1.1.25、射线",
                         thumbnail: "1.1.25、射线.jpg",
                         fileName: "1.1.25、射线"
                     },
                     {
-                        name: "1.1.26、射线获取层级模型",
+                        name: "7.1.2、射线获取层级模型",
                         name_en: "1.1.26、射线获取层级模型",
                         thumbnail: "1.1.26、射线获取层级模型.jpg",
                         fileName: "1.1.26、射线获取层级模型"
                     },
                     {
-                        name: "1.1.30、OutlinePass",
+                        name: "7.1.3、OutlinePass",
                         name_en: "1.1.30、OutlinePass",
                         thumbnail: "1.1.30、OutlinePass.jpg",
                         fileName: "1.1.30、OutlinePass"
                     },
                     {
-                        name: "1.1.31、OutlinePass模型发光",
+                        name: "7.1.4、OutlinePass模型发光",
                         name_en: "1.1.31、OutlinePass模型发光",
                         thumbnail: "1.1.31、OutlinePass模型发光.jpg",
                         fileName: "1.1.31、OutlinePass模型发光"
@@ -356,21 +356,21 @@ var exampleConfig = {
         }
     },
     "iPortal": {
-        name: "后处理",
+        name: "8、后处理",
         name_en: "后处理",
         content: {
             "map32233": {
-                name: "OutlinePass",
+                name: "8.1、OutlinePass",
                 name_en: "OutlinePass",
                 content: [
                     {
-                        name: "1.1.30、OutlinePass",
+                        name: "8.1.1、OutlinePass",
                         name_en: "1.1.30、OutlinePass",
                         thumbnail: "1.1.30、OutlinePass.jpg",
                         fileName: "1.1.30、OutlinePass"
                     },
                     {
-                        name: "1.1.31、OutlinePass模型发光",
+                        name: "8.1.2、OutlinePass模型发光",
                         name_en: "1.1.31、OutlinePass模型发光",
                         thumbnail: "1.1.31、OutlinePass模型发光.jpg",
                         fileName: "1.1.31、OutlinePass模型发光"
@@ -378,18 +378,18 @@ var exampleConfig = {
                 ]
             },
             "ma332323p": {
-                name: "精灵材质",
-                name_en: "精灵材质",
+                name: "8.2、精灵材质",
+                name_en: "8.2、精灵材质",
                 content: [
                     {
-                        name: "1.1.24、精灵",
+                        name: "8.2.1、精灵",
                         name_en: "1.1.24、精灵",
                         thumbnail: "1.1.24、精灵.jpg",
                         fileName: "1.1.24、精灵"
                     },
 
                     {
-                        name: "1.1.27、下雨",
+                        name: "8.2.2、下雨",
                         name_en: "1.1.27、下雨",
                         thumbnail: "1.1.27、下雨.jpg",
                         fileName: "1.1.27、下雨"
@@ -397,11 +397,11 @@ var exampleConfig = {
                 ]
             },
             "ma3323232333p": {
-                name: "线框",
+                name: "8.3、线框",
                 name_en: "线框",
                 content: [
                     {
-                        name: "1.1.18、线框",
+                        name: "8.3.1、线框",
                         name_en: "1.1.18、线框",
                         thumbnail: "1.1.18、线框.jpg",
                         fileName: "1.1.18、线框"
@@ -412,21 +412,21 @@ var exampleConfig = {
         }
     },
     "Online": {
-        name: "GUI",
+        name: "9、GUI",
         name_en: "GUI",
         content: {
             "ma7vcp": {
-                name: "GUI",
+                name: "9.1、GUI",
                 name_en: "GUI",
                 content: [
                     {
-                        name: "1.1.28、GUI",
+                        name: "9.1.1、GUI",
                         name_en: "1.1.28、GUI",
                         thumbnail: "1.1.28、GUI.jpg",
                         fileName: "1.1.28、GUI"
                     },
                     {
-                        name: "1.1.29、GUI分组",
+                        name: "9.1.2、GUI分组",
                         name_en: "1.1.29、GUI分组",
                         thumbnail: "1.1.29、GUI分组.jpg",
                         fileName: "1.1.29、GUI分组"
@@ -438,45 +438,45 @@ var exampleConfig = {
     },
 
     "mapping": {
-        name: "几何体",
+        name: "10、几何体",
         name_en: "几何体",
         content: {
             "ma43432p": {
-                name: "几何体",
+                name: "10.1 、几何体",
                 name_en: "几何体",
                 content: [
                     {
-                        name: "2.1.1、点、线",
+                        name: "10.1.1、点、线",
                         name_en: "2.1.1、点、线",
                         thumbnail: "2.1.1、点、线.jpg",
                         fileName: "2.1.1、点、线"
                     },
                     {
-                        name: "2.1.2、网格",
+                        name: "10.1.2、网格",
                         name_en: "2.1.2、网格",
                         thumbnail: "2.1.2、网格.jpg",
                         fileName: "2.1.2、网格"
                     },
                     {
-                        name: "2.1.3、索引",
+                        name: "10.1.3、索引",
                         name_en: "2.1.3、索引",
                         thumbnail: "2.1.3、索引.jpg",
                         fileName: "2.1.3、索引"
                     },
                     {
-                        name: "2.1.4、旋转、缩放、平移几何体",
+                        name: "10.1.4、旋转、缩放、平移几何体",
                         name_en: "2.1.4、旋转、缩放、平移几何体",
                         thumbnail: "2.1.4、旋转、缩放、平移几何体.jpg",
                         fileName: "2.1.4、旋转、缩放、平移几何体"
                     },
                     {
-                        name: "2.1.5、自带几何体顶点",
+                        name: "10.1.5、自带几何体顶点",
                         name_en: "2.1.5、自带几何体顶点",
                         thumbnail: "2.1.5、自带几何体顶点.jpg",
                         fileName: "2.1.5、自带几何体顶点"
                     },
                     {
-                        name: "2.1.6、顶点颜色",
+                        name: "10.1.6、顶点颜色",
                         name_en: "2.1.6、顶点颜色",
                         thumbnail: "2.1.6、顶点颜色.jpg",
                         fileName: "2.1.6、顶点颜色"
