@@ -12,6 +12,7 @@
     <script src="./kriging.js"></script>
     <script src="./rainbowvis.js"></script>
     <script src="./drawKriging.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body style="margin: 0; overflow: hidden; background: #fff; width: 100%; height: 100%; position: absolute; top: 0">
@@ -20,30 +21,24 @@
     <script type="text/javascript">
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M'
         const viewer = new Cesium.Viewer('map', {});
-        viewer.scene.debugShowFramesPerSecond = true;
-        viewer.scene.globe.depthTestAgainstTerrain = true;
-        viewer.imageryLayers.remove(viewer.imageryLayers.get(0));
-        var imageryProvider = new Cesium.SingleTileImageryProvider({
-            "url": "./world_b.jpg",
-        })
-        viewer.imageryLayers.addImageryProvider(imageryProvider)
-
-
-        var polygons = turf.randomPolygon(1, { bbox: [-120, 20, -80, 40] })
-        var points = turf.randomPoint(100, { bbox: turf.bbox(polygons.features[0]) })
-        points.features.forEach(element => {
-            element.properties.temperature = parseInt(Math.random() * 300)
-        });
-
-        let krigingMap =  drawKriging(points, polygons.features[0].geometry.coordinates, {
-            "propname": 'temperature',
-            width: 0.1,
-            alpha: 0.5
-        });
-
-        // 删除
-        // viewer.scene.primitives.remove(krigingMap)
-
+   
+        axios.get('https://geo.datav.aliyun.com/areas_v3/bound/100000.json')
+            .then((response) => {
+                console.log(response)
+                var polygons = response.data;
+                var points = turf.randomPoint(100, { bbox:[100, 20, 130, 40] })
+                points.features.forEach(element => {
+                    element.properties.temperature = parseInt(Math.random() * 300)
+                });
+                let krigingMap = drawKriging(points, polygons.features[0].geometry.coordinates[0], {
+                    "propname": 'temperature',
+                    width: 0.1,
+                    alpha: 0.5
+                });
+            })
+            viewer.camera.setView({
+      destination: Cesium.Cartesian3.fromDegrees(100, 30, 4025692.0)
+    });
     </script>
 </body>
 
