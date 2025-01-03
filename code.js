@@ -2,7 +2,7 @@
 let authorizeCode = [
     {
         'id': 'aa1ce9548a4110da75b1276f70d6bb7d',
-        'endTime': '2500-12-31 24:00:00',
+        'endTime': '2000-12-31 24:00:00',
         'name': 'jiawanlong',
     },
     {
