@@ -55,6 +55,12 @@ var exampleConfig = {
                         thumbnail: "5.3.12、GUI视锥体.jpg",
                         fileName: "5.3.12、GUI视锥体"
                     },
+                    {
+                        name: "Cesium融合Three",
+                        name_en: "Cesium融合Three",
+                        thumbnail: "Cesium融合Three.jpg",
+                        fileName: "Cesium融合Three"
+                    },
                 ]
             },
         }
