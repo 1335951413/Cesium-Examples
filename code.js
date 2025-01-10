@@ -11,6 +11,11 @@ let authorizeCode = [
         'name': 'glj',
     },
     {
+        'id': 'e650ec34663d26bb6080d18cdd832e47',
+        'endTime': '2025-01-11 24:00:00',
+        'name': 'xzg',
+    },
+    {
         'id': '9f989d38fe9200769b0acdec6b7fcfa7',
         'endTime': '2025-01-03 24:00:00',
         'name': 'wx-wh-lucky',
