@@ -12,7 +12,7 @@ const authorizeCode = [
     },
     {
         'id': '642a3aeabaa6bc5dbafbaa52fd57904a',
-        'endTime': '2025-01-15 24:00:00',
+        'endTime': '2025-02-15 24:00:00',
         'name': 'yybgs',
     },
     {
