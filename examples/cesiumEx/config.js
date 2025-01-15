@@ -37,6 +37,12 @@ var exampleConfig = {
                         thumbnail: "2.jpg",
                         fileName: "2"
                     },
+                    {
+                        name: "二三维联动",
+                        name_en: "二三维联动",
+                        thumbnail: "二三维联动.jpg",
+                        fileName: "二三维联动"
+                    },
                     // {
                     //     name: "航拍",
                     //     name_en: "航拍",
@@ -61,6 +67,12 @@ var exampleConfig = {
                         thumbnail: "Cesium融合Three.jpg",
                         fileName: "Cesium融合Three"
                     },
+                    // {
+                    //     name: "韩国空难",
+                    //     name_en: "韩国空难",
+                    //     thumbnail: "韩国空难.jpg",
+                    //     fileName: "韩国空难"
+                    // },
                 ]
             },
         }
